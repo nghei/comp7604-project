@@ -3,7 +3,13 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {	
-	public float health = 100f;					// The player's health.
+	public const int maxLevel = 18;					// The player's maximum achieveable level.
+	public const float initialHealth = 100f;				// The player's health at level 1.
+	public const float growthPerLevel = 20f;				// Increase in maximum health when level up.
+
+	public int level = 1;						// The player's level.
+	public float health = initialHealth;				// The player's health.
+	public float XP = 0f;						// The player's Experience Point (XP).
 	public float repeatDamagePeriod = 2f;		// How frequently the player can be damaged.
 	public AudioClip[] ouchClips;				// Array of clips to play when the player is damaged.
 	public float hurtForce = 10f;				// The force with which the player is pushed when hurt.
@@ -78,6 +84,7 @@ public class PlayerHealth : MonoBehaviour
 	{
 		// Make sure the player can't jump.
 		playerControl.jump = false;
+		playerControl.isJumping = false;
 
 		// Create a vector that's from the enemy to the player with an upwards boost.
 		Vector3 hurtVector = transform.position - enemy.position + Vector3.up * 5f;
