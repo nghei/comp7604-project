@@ -4,6 +4,8 @@ using System.Collections;
 public class Enemy : MonoBehaviour
 {
 	public float moveSpeed = 2f;		// The speed the enemy moves at.
+	public GameObject hero;			// Tracks the hero.
+	public GameObject spawn;		// Tracks the spawn.
 	public int HP = 2;					// How many times the enemy can be hit before it dies.
 	public Sprite deadEnemy;			// A sprite of the enemy when it's dead.
 	public Sprite damagedEnemy;			// An optional sprite of the enemy when it's damaged.
@@ -11,6 +13,9 @@ public class Enemy : MonoBehaviour
 	public GameObject hundredPointsUI;	// A prefab of 100 that appears when the enemy dies.
 	public float deathSpinMin = -100f;			// A value to give the minimum amount of Torque when dying
 	public float deathSpinMax = 100f;			// A value to give the maximum amount of Torque when dying
+
+	private SpriteRenderer healthBar;			// Reference to the sprite renderer of the health bar.
+	private Vector3 healthScale;				// The local scale of the health bar initially (with full health).
 
 
 	private SpriteRenderer ren;			// Reference to the sprite renderer.

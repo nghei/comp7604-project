@@ -7,12 +7,17 @@ public class PlayerControl : MonoBehaviour
 	public bool facingRight = true;			// For determining which way the player is currently facing.
 	[HideInInspector]
 	public bool jump = false;				// Condition for whether the player should jump.
+	[HideInInspector]
+	public float jumpTime = 0.0f;				// Tracks last time the player takes off ground.
+	[HideInInspector]
+	public bool isJumping = false;				// Whether the player is currently jumping.
 
 
-	public float moveForce = 365f;			// Amount of force added to move the player left and right.
+	public GameObject hero;
+	public float moveForce = 200f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
 	public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
-	public float jumpForce = 1000f;			// Amount of force added when the player jumps.
+	public float jumpForce = 5000f;			// Amount of force added when the player jumps.
 	public AudioClip[] taunts;				// Array of clips for when the player taunts.
 	public float tauntProbability = 50f;	// Chance of a taunt happening.
 	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
@@ -24,9 +29,12 @@ public class PlayerControl : MonoBehaviour
 	private Animator anim;					// Reference to the player's animator component.
 
 
+	private float lastTime;
+
 	void Awake()
 	{
 		// Setting up references.
+		hero = GameObject.FindGameObjectWithTag("Player");
 		groundCheck = transform.Find("groundCheck");
 		anim = GetComponent<Animator>();
 	}
@@ -34,14 +42,45 @@ public class PlayerControl : MonoBehaviour
 
 	void Update()
 	{
-		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
-		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
+		// If the player is jumping up, allow it to pass through the Ground layer (by moving the player to the layer "PassThru").
+		if (!isJumping || GetComponent<Rigidbody2D>().velocity.y < 0)
+		{
+			// If player was jumping, move it back to Player layer
+			if (Time.time > jumpTime + 0.1f)
+			{
+				if (hero.layer != LayerMask.NameToLayer("Player"))
+				{
+					hero.layer = LayerMask.NameToLayer("Player");
+				}
+			}
 
-		// If the jump button is pressed and the player is grounded then the player should jump.
-		if(Input.GetButtonDown("Jump") && grounded)
-			jump = true;
+			// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
+			grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
+
+			if (grounded)
+			{
+				// If the jump button is pressed and the player is grounded then the player should jump.
+				if(Input.GetButtonDown("Jump"))
+				{
+					jump = true;
+					jumpTime = Time.time;
+					isJumping = true;
+					hero.layer = LayerMask.NameToLayer("PassThru");
+				}
+			}
+		}
+		else
+		{
+			grounded = false;
+		}
+
 	}
 
+	void OnCollisionEnter2D (Collision2D col)
+	{
+		Debug.Log(col.collider.tag);
+		isJumping = false;
+	}
 
 	void FixedUpdate ()
 	{
@@ -87,7 +126,6 @@ public class PlayerControl : MonoBehaviour
 			jump = false;
 		}
 	}
-	
 	
 	void Flip ()
 	{
