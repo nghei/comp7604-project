@@ -1,0 +1,2380 @@
+fileFormatVersion: 2
+guid: a30c8394feb5341b595a6b617e4b9d3a
+timeCreated: 1467955322
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zombie_0
+    21300002: zombie_1
+    21300004: zombie_2
+    21300006: zombie_3
+    21300008: zombie_4
+    21300010: zombie_5
+    21300012: zombie_6
+    21300014: zombie_7
+    21300016: zombie_8
+    21300018: zombie_9
+    21300020: zombie_10
+    21300022: zombie_11
+    21300024: zombie_12
+    21300026: zombie_13
+    21300028: zombie_14
+    21300030: zombie_15
+    21300032: zombie_16
+    21300034: zombie_17
+    21300036: zombie_18
+    21300038: zombie_19
+    21300040: zombie_20
+    21300042: zombie_21
+    21300044: zombie_22
+    21300046: zombie_23
+    21300048: zombie_24
+    21300050: zombie_25
+    21300052: zombie_26
+    21300054: zombie_27
+    21300056: zombie_28
+    21300058: zombie_29
+    21300060: zombie_30
+    21300062: zombie_31
+    21300064: zombie_32
+    21300066: zombie_33
+    21300068: zombie_34
+    21300070: zombie_35
+    21300072: zombie_36
+    21300074: zombie_37
+    21300076: zombie_38
+    21300078: zombie_39
+    21300080: zombie_40
+    21300082: zombie_41
+    21300084: zombie_42
+    21300086: zombie_43
+    21300088: zombie_44
+    21300090: zombie_45
+    21300092: zombie_46
+    21300094: zombie_47
+    21300096: zombie_48
+    21300098: zombie_49
+    21300100: zombie_50
+    21300102: zombie_51
+    21300104: zombie_52
+    21300106: zombie_53
+    21300108: zombie_54
+    21300110: zombie_55
+    21300112: zombie_56
+    21300114: zombie_57
+    21300116: zombie_58
+    21300118: zombie_59
+    21300120: zombie_60
+    21300122: zombie_61
+    21300124: zombie_62
+    21300126: zombie_63
+    21300128: zombie_64
+    21300130: zombie_65
+    21300132: zombie_66
+    21300134: zombie_67
+    21300136: zombie_68
+    21300138: zombie_69
+    21300140: zombie_70
+    21300142: zombie_71
+    21300144: zombie_72
+    21300146: zombie_73
+    21300148: zombie_74
+    21300150: zombie_75
+    21300152: zombie_76
+    21300154: zombie_77
+    21300156: zombie_78
+    21300158: zombie_79
+    21300160: zombie_80
+    21300162: zombie_81
+    21300164: zombie_82
+    21300166: zombie_83
+    21300168: zombie_84
+    21300170: zombie_85
+    21300172: zombie_86
+    21300174: zombie_87
+    21300176: zombie_88
+    21300178: zombie_89
+    21300180: zombie_90
+    21300182: zombie_91
+    21300184: zombie_92
+    21300186: zombie_93
+    21300188: zombie_94
+    21300190: zombie_95
+    21300192: zombie_96
+    21300194: zombie_97
+    21300196: zombie_98
+    21300198: zombie_99
+    21300200: zombie_100
+    21300202: zombie_101
+    21300204: zombie_102
+    21300206: zombie_103
+    21300208: zombie_104
+    21300210: zombie_105
+    21300212: zombie_106
+    21300214: zombie_107
+    21300216: zombie_108
+    21300218: zombie_109
+    21300220: zombie_110
+    21300222: zombie_111
+    21300224: zombie_112
+    21300226: zombie_113
+    21300228: zombie_114
+    21300230: zombie_115
+    21300232: zombie_116
+    21300234: zombie_117
+    21300236: zombie_118
+    21300238: zombie_119
+    21300240: zombie_120
+    21300242: zombie_121
+    21300244: zombie_122
+    21300246: zombie_123
+    21300248: zombie_124
+    21300250: zombie_125
+    21300252: zombie_126
+    21300254: zombie_127
+    21300256: zombie_128
+    21300258: zombie_129
+    21300260: zombie_130
+    21300262: zombie_131
+    21300264: zombie_132
+    21300266: zombie_133
+    21300268: zombie_134
+    21300270: zombie_135
+    21300272: zombie_136
+    21300274: zombie_137
+    21300276: zombie_138
+    21300278: zombie_139
+    21300280: zombie_140
+    21300282: zombie_141
+    21300284: zombie_142
+    21300286: zombie_143
+    21300288: zombie_144
+    21300290: zombie_145
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: zombie_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1085
+        width: 39
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 43.5}
+        - {x: -19.5, y: 31.5}
+        - {x: -19.5, y: -43.5}
+        - {x: 19.5, y: -43.5}
+        - {x: 19.5, y: 41.5}
+        - {x: 18.5, y: 43.5}
+    - name: zombie_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1085
+        width: 39
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 43.5}
+        - {x: -19.5, y: 14.5}
+        - {x: -19.5, y: -42.5}
+        - {x: -16.5, y: -43.5}
+        - {x: 19.5, y: -43.5}
+        - {x: 19.5, y: 33.5}
+        - {x: 16.5, y: 43.5}
+    - name: zombie_2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1085
+        width: 39
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 43.5}
+        - {x: -9.5, y: 42.5}
+        - {x: -19.5, y: 17.5}
+        - {x: -19.5, y: -43.5}
+        - {x: 19.5, y: -43.5}
+        - {x: 19.5, y: 36.5}
+        - {x: 16.5, y: 43.5}
+    - name: zombie_3
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1085
+        width: 39
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 43.5}
+        - {x: -19.5, y: 32.5}
+        - {x: -19.5, y: -43.5}
+        - {x: 19.5, y: -43.5}
+        - {x: 19.5, y: 43.5}
+    - name: zombie_4
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1085
+        width: 38
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 43.5}
+        - {x: -19, y: 36.5}
+        - {x: -19, y: -43.5}
+        - {x: 19, y: -43.5}
+        - {x: 19, y: 18.5}
+        - {x: 17, y: 39.5}
+        - {x: 14, y: 43.5}
+    - name: zombie_5
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1084
+        width: 37
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 44.5}
+        - {x: -18.5, y: -44.5}
+        - {x: 18.5, y: -44.5}
+        - {x: 18.5, y: 41.5}
+        - {x: 12.5, y: 44.5}
+    - name: zombie_6
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1084
+        width: 39
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 45}
+        - {x: -19.5, y: 44}
+        - {x: -19.5, y: -45}
+        - {x: 19.5, y: -45}
+        - {x: 19.5, y: 45}
+    - name: zombie_7
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1084
+        width: 41
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: -40}
+        - {x: 20.5, y: -40}
+        - {x: 20.5, y: 26}
+        - {x: 12.5, y: 40}
+        - {x: 6.5, y: 45}
+        - {x: -8.5, y: 45}
+        - {x: -20.5, y: 27}
+        - {x: -20.5, y: -45}
+        - {x: 11.5, y: -45}
+        - {x: 11.5, y: -42}
+        - {x: 9.5, y: -40}
+    - name: zombie_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 962
+        width: 40
+        height: 87
+      alignment: 9
+      pivot: {x: 0.56657887, y: 0.52295834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.336845, y: 40.502625}
+        - {x: 13.336845, y: 41.502625}
+        - {x: -4.6631546, y: 41.502625}
+        - {x: -22.663155, y: 28.502625}
+        - {x: -22.663155, y: -43.497375}
+        - {x: -11.663155, y: -45.497375}
+        - {x: 17.336845, y: -45.497375}
+        - {x: 17.336845, y: 21.502625}
+    - name: zombie_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 964
+        width: 45
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5739763, y: 0.50756556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.828934, y: 43.33423}
+        - {x: -25.828934, y: -44.66577}
+        - {x: 19.171066, y: -44.66577}
+        - {x: 19.171066, y: 36.33423}
+        - {x: 16.171066, y: 43.33423}
+    - name: zombie_10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 963
+        width: 50
+        height: 90
+      alignment: 9
+      pivot: {x: 0.6065265, y: 0.5221931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.3263245, y: 43.002625}
+        - {x: -11.326324, y: 42.002625}
+        - {x: -30.326324, y: 18.002625}
+        - {x: -30.326324, y: -38.997375}
+        - {x: -24.326324, y: -46.997375}
+        - {x: 19.673676, y: -46.997375}
+        - {x: 19.673676, y: 33.002625}
+        - {x: 8.673676, y: 43.002625}
+    - name: zombie_11
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 963
+        width: 51
+        height: 90
+      alignment: 9
+      pivot: {x: 0.57832843, y: 0.5221931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.494751, y: 24.002625}
+        - {x: -29.494751, y: -46.997375}
+        - {x: 21.505249, y: -46.997375}
+        - {x: 21.505249, y: 43.002625}
+        - {x: -8.494751, y: 43.002625}
+        - {x: -12.494751, y: 42.002625}
+    - name: zombie_12
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 963
+        width: 45
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5443868, y: 0.50748056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.497406, y: 43.83423}
+        - {x: -15.497406, y: 42.83423}
+        - {x: -24.497406, y: 12.8342285}
+        - {x: -24.497406, y: -45.16577}
+        - {x: 20.502594, y: -45.16577}
+        - {x: 20.502594, y: 32.83423}
+        - {x: 8.502594, y: 43.83423}
+    - name: zombie_13
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 964
+        width: 45
+        height: 85
+      alignment: 9
+      pivot: {x: 0.47041017, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.831543, y: 42.5}
+        - {x: -14.168457, y: 42.5}
+        - {x: -21.168457, y: 27.5}
+        - {x: -21.168457, y: -42.5}
+        - {x: 23.831543, y: -42.5}
+        - {x: 23.831543, y: 10.5}
+        - {x: 15.831543, y: 41.5}
+    - name: zombie_14
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 963
+        width: 57
+        height: 82
+      alignment: 9
+      pivot: {x: 0.43997568, y: 0.5083447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.078613, y: 40.315735}
+        - {x: -25.078613, y: -2.6842651}
+        - {x: -25.078613, y: -41.684265}
+        - {x: 31.921387, y: -41.684265}
+        - {x: 31.921387, y: 2.3157349}
+        - {x: 10.921387, y: 40.315735}
+    - name: zombie_15
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 963
+        width: 65
+        height: 81
+      alignment: 9
+      pivot: {x: 0.42630896, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.289917, y: -13.5}
+        - {x: 37.289917, y: 1.5}
+        - {x: 35.289917, y: 4.5}
+        - {x: 30.289917, y: 3.5}
+        - {x: 17.289917, y: 35.5}
+        - {x: 12.289917, y: 40.5}
+        - {x: -16.710083, y: 40.5}
+        - {x: -27.710083, y: 8.5}
+        - {x: -27.710083, y: -40.5}
+        - {x: 34.289917, y: -40.5}
+        - {x: 37.289917, y: -37.5}
+        - {x: 37.289917, y: -31.5}
+        - {x: 31.289917, y: -31.5}
+    - name: zombie_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 846
+        width: 62
+        height: 83
+      alignment: 9
+      pivot: {x: 0.45439178, y: 0.5170347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.17229, y: 40.08612}
+        - {x: -28.17229, y: 4.0861206}
+        - {x: -28.17229, y: -42.91388}
+        - {x: 33.82771, y: -42.91388}
+        - {x: 33.82771, y: 26.08612}
+        - {x: 27.82771, y: 40.08612}
+    - name: zombie_17
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 846
+        width: 55
+        height: 85
+      alignment: 9
+      pivot: {x: 0.47429365, y: 0.533267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.913849, y: -24.327698}
+        - {x: 16.913849, y: -26.327698}
+        - {x: 22.913849, y: -27.327698}
+        - {x: 28.913849, y: -21.327698}
+        - {x: 28.913849, y: 9.672302}
+        - {x: 16.913849, y: 39.672302}
+        - {x: -15.086151, y: 39.672302}
+        - {x: -26.086151, y: 9.672302}
+        - {x: -26.086151, y: -45.327698}
+        - {x: 28.913849, y: -45.327698}
+        - {x: 28.913849, y: -34.327698}
+        - {x: 13.913849, y: -25.327698}
+    - name: zombie_18
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 847
+        width: 47
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5162515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.5, y: -20.91388}
+        - {x: 23.5, y: -6.9138794}
+        - {x: 20.5, y: -5.9138794}
+        - {x: 23.5, y: -4.9138794}
+        - {x: 17.5, y: 36.08612}
+        - {x: 12.5, y: 42.08612}
+        - {x: -20.5, y: 42.08612}
+        - {x: -23.5, y: 27.08612}
+        - {x: -23.5, y: -44.91388}
+        - {x: 22.5, y: -44.91388}
+        - {x: 23.5, y: -42.91388}
+        - {x: 23.5, y: -36.91388}
+        - {x: 20.5, y: -35.91388}
+    - name: zombie_19
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 847
+        width: 42
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5336631, y: 0.5162515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.586151, y: 42.08612}
+        - {x: -8.413849, y: 42.08612}
+        - {x: -22.413849, y: 24.08612}
+        - {x: -22.413849, y: -44.91388}
+        - {x: 19.586151, y: -44.91388}
+        - {x: 19.586151, y: 9.086121}
+        - {x: 16.586151, y: 38.08612}
+    - name: zombie_20
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 858
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 32}
+        - {x: -29, y: -32}
+        - {x: 29, y: -32}
+        - {x: 29, y: 32}
+    - name: zombie_21
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 893
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_22
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 903
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_23
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 903
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_24
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 903
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_25
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 903
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_26
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 903
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_27
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 874
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_28
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 874
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_29
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 874
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_30
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 874
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_31
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 874
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_32
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 874
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_33
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 874
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_34
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 874
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_35
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 874
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_36
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 871
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_37
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 874
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_38
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 874
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_39
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 874
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_40
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 874
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_41
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 874
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_42
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 874
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_43
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 874
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_44
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 871
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_45
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 874
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_46
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 858
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_47
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 858
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_48
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 856
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_49
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 858
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_50
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 858
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_51
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 858
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_52
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 855
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_53
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 858
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_54
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 858
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_55
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 858
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_56
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 858
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_57
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 858
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_58
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 858
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_59
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 858
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_60
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 858
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_61
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 725
+        width: 47
+        height: 83
+      alignment: 9
+      pivot: {x: 0.4581871, y: 0.50789267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.534794, y: 40.84491}
+        - {x: -21.534794, y: 34.84491}
+        - {x: -21.534794, y: -42.15509}
+        - {x: 20.465206, y: -42.15509}
+        - {x: 25.465206, y: -41.15509}
+        - {x: 25.465206, y: 28.84491}
+        - {x: 7.465206, y: 40.84491}
+    - name: zombie_62
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 725
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 42.5}
+        - {x: -17, y: 29.5}
+        - {x: -17, y: -42.5}
+        - {x: 17, y: -42.5}
+        - {x: 17, y: 42.5}
+    - name: zombie_63
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 724
+        width: 54
+        height: 83
+      alignment: 9
+      pivot: {x: 0.37869093, y: 0.5315699}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.4493103, y: 38.8797}
+        - {x: -20.44931, y: 31.8797}
+        - {x: -20.44931, y: -44.1203}
+        - {x: 33.55069, y: -44.1203}
+        - {x: 33.55069, y: 28.8797}
+        - {x: 13.55069, y: 38.8797}
+    - name: zombie_64
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 724
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.37717438, y: 0.53275377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.86084, y: 32.3797}
+        - {x: 13.86084, y: 37.3797}
+        - {x: -8.13916, y: 37.3797}
+        - {x: -24.13916, y: 4.3796997}
+        - {x: -24.13916, y: -42.6203}
+        - {x: 39.86084, y: -42.6203}
+        - {x: 39.86084, y: 33.3797}
+        - {x: 29.86084, y: 34.3797}
+    - name: zombie_65
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 724
+        width: 60
+        height: 86
+      alignment: 9
+      pivot: {x: 0.35806885, y: 0.47714943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.51587, y: -17.034851}
+        - {x: 17.51587, y: -18.034851}
+        - {x: 16.51587, y: -9.034851}
+        - {x: 19.51587, y: -8.034851}
+        - {x: 30.51587, y: 13.965149}
+        - {x: 38.51587, y: 37.96515}
+        - {x: 38.51587, y: 41.96515}
+        - {x: 33.51587, y: 44.96515}
+        - {x: 13.515869, y: 44.96515}
+        - {x: 14.515869, y: 37.96515}
+        - {x: -12.484131, y: 37.96515}
+        - {x: -21.48413, y: 6.965149}
+        - {x: -21.48413, y: -41.03485}
+        - {x: 7.515869, y: -41.03485}
+        - {x: 14.515869, y: -40.03485}
+        - {x: 38.51587, y: -23.034851}
+        - {x: 38.51587, y: -16.034851}
+        - {x: 19.51587, y: -14.034851}
+    - name: zombie_66
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 724
+        width: 54
+        height: 90
+      alignment: 9
+      pivot: {x: 0.40295297, y: 0.47088623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.24053955, y: 47.62024}
+        - {x: -21.75946, y: 15.620239}
+        - {x: -21.75946, y: -42.37976}
+        - {x: 18.24054, y: -42.37976}
+        - {x: 32.24054, y: -25.37976}
+        - {x: 32.24054, y: 47.62024}
+    - name: zombie_67
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 724
+        width: 63
+        height: 85
+      alignment: 9
+      pivot: {x: 0.34403095, y: 0.5000007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.32605, y: 42.49994}
+        - {x: -17.67395, y: 22.499939}
+        - {x: -21.67395, y: -17.500061}
+        - {x: -21.67395, y: -42.50006}
+        - {x: 15.32605, y: -42.50006}
+        - {x: 41.32605, y: -33.50006}
+        - {x: 41.32605, y: 42.49994}
+    - name: zombie_68
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 724
+        width: 60
+        height: 82
+      alignment: 9
+      pivot: {x: 0.34715068, y: 0.5239667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.17096, y: -27.965271}
+        - {x: 39.17096, y: -15.965271}
+        - {x: 39.17096, y: 31.034729}
+        - {x: 29.17096, y: 39.03473}
+        - {x: 0.17095947, y: 39.03473}
+        - {x: -1.8290405, y: 36.03473}
+        - {x: -12.829041, y: 20.034729}
+        - {x: -12.829041, y: 12.034729}
+        - {x: -19.82904, y: -5.965271}
+        - {x: -20.82904, y: -8.965271}
+        - {x: -20.82904, y: -42.96527}
+        - {x: 39.17096, y: -42.96527}
+        - {x: 39.17096, y: -30.965271}
+        - {x: 36.17096, y: -27.965271}
+    - name: zombie_69
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 595
+        width: 40
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -22.5}
+        - {x: 15, y: -23.5}
+        - {x: 16, y: -22.5}
+        - {x: 18, y: -23.5}
+        - {x: 20, y: -23.5}
+        - {x: 20, y: 48.5}
+        - {x: -1, y: 48.5}
+        - {x: -2, y: 47.5}
+        - {x: -2, y: 41.5}
+        - {x: 1, y: 38.5}
+        - {x: -2, y: 39.5}
+        - {x: -7, y: 48.5}
+        - {x: -13, y: 48.5}
+        - {x: -20, y: 26.5}
+        - {x: -20, y: -48.5}
+        - {x: 20, y: -48.5}
+        - {x: 20, y: -25.5}
+        - {x: 19, y: -24.5}
+    - name: zombie_70
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 595
+        width: 67
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7268727, y: 0.49245963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.70047, y: 48.723877}
+        - {x: -46.70047, y: 29.723877}
+        - {x: -44.70047, y: 25.723877}
+        - {x: -48.70047, y: 0.72387695}
+        - {x: -48.70047, y: -28.276123}
+        - {x: -47.70047, y: -30.276123}
+        - {x: -22.70047, y: -47.276123}
+        - {x: 18.29953, y: -47.276123}
+        - {x: 18.29953, y: 1.723877}
+        - {x: 13.29953, y: 48.723877}
+    - name: zombie_71
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 595
+        width: 56
+        height: 97
+      alignment: 9
+      pivot: {x: 0.44829777, y: 0.46268865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.895325, y: 52.1192}
+        - {x: -17.104675, y: 34.1192}
+        - {x: -25.104675, y: -7.8807983}
+        - {x: -25.104675, y: -44.8808}
+        - {x: 18.895325, y: -44.8808}
+        - {x: 30.895325, y: -36.8808}
+        - {x: 30.895325, y: 50.1192}
+        - {x: 25.895325, y: 52.1192}
+    - name: zombie_72
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 595
+        width: 59
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 40}
+        - {x: -29.5, y: 7}
+        - {x: -29.5, y: -40}
+        - {x: 15.5, y: -40}
+        - {x: 29.5, y: -31}
+        - {x: 29.5, y: 23}
+        - {x: 8.5, y: 40}
+    - name: zombie_73
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 595
+        width: 58
+        height: 81
+      alignment: 9
+      pivot: {x: 0.43687385, y: 0.5112998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.661316, y: -25.415283}
+        - {x: 26.661316, y: -27.415283}
+        - {x: 10.661316, y: -25.415283}
+        - {x: 12.661316, y: -18.415283}
+        - {x: 21.661316, y: -26.415283}
+        - {x: 26.661316, y: -26.415283}
+        - {x: 32.661316, y: -20.415283}
+        - {x: 32.661316, y: 1.5847168}
+        - {x: 13.661316, y: 34.584717}
+        - {x: 8.661316, y: 39.584717}
+        - {x: -5.338684, y: 39.584717}
+        - {x: -8.338684, y: 38.584717}
+        - {x: -21.338684, y: 0.5847168}
+        - {x: -25.338684, y: -14.415283}
+        - {x: -25.338684, y: -41.415283}
+        - {x: 24.661316, y: -41.415283}
+        - {x: 29.661316, y: -38.415283}
+        - {x: 32.661316, y: -32.415283}
+        - {x: 32.661316, y: -25.415283}
+    - name: zombie_74
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 595
+        width: 58
+        height: 83
+      alignment: 9
+      pivot: {x: 0.40531132, y: 0.5110275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.491943, y: -33.415283}
+        - {x: 34.491943, y: -33.415283}
+        - {x: 34.491943, y: 8.584717}
+        - {x: 17.491943, y: 40.584717}
+        - {x: -10.508057, y: 40.584717}
+        - {x: -20.508057, y: 31.584717}
+        - {x: -23.508057, y: -18.415283}
+        - {x: -23.508057, y: -42.415283}
+        - {x: 32.491943, y: -42.415283}
+        - {x: 34.491943, y: -40.415283}
+        - {x: 34.491943, y: -34.415283}
+        - {x: 33.491943, y: -33.415283}
+    - name: zombie_75
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 600
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 23.5}
+        - {x: -14, y: 22.5}
+        - {x: -20, y: 10.5}
+        - {x: -20, y: -11.5}
+        - {x: -18, y: -20.5}
+        - {x: -10, y: -23.5}
+        - {x: 11, y: -23.5}
+        - {x: 12, y: -22.5}
+        - {x: 12, y: 16.5}
+        - {x: 7, y: 23.5}
+    - name: zombie_76
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 602
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_77
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 460
+        width: 51
+        height: 97
+      alignment: 9
+      pivot: {x: 0.46410504, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.6693573, y: 48.5}
+        - {x: -20.669357, y: 37.5}
+        - {x: -23.669357, y: 4.5}
+        - {x: -23.669357, y: -48.5}
+        - {x: 14.330643, y: -48.5}
+        - {x: 27.330643, y: -43.5}
+        - {x: 27.330643, y: 48.5}
+    - name: zombie_78
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 460
+        width: 73
+        height: 98
+      alignment: 9
+      pivot: {x: 0.7758499, y: 0.4719799}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56.63704, y: 51.74597}
+        - {x: -56.63704, y: 50.74597}
+        - {x: -52.63704, y: 29.745972}
+        - {x: -44.63704, y: 31.745972}
+        - {x: -56.63704, y: -2.2540283}
+        - {x: -56.63704, y: -27.254028}
+        - {x: -24.63704, y: -46.25403}
+        - {x: 16.36296, y: -46.25403}
+        - {x: 16.36296, y: -7.2540283}
+        - {x: 10.362961, y: 38.74597}
+        - {x: -2.6370392, y: 51.74597}
+    - name: zombie_79
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 460
+        width: 94
+        height: 72
+      alignment: 9
+      pivot: {x: 0.3149885, y: 0.55085117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.391083, y: -29.661285}
+        - {x: 30.391083, y: -29.661285}
+        - {x: 29.391083, y: -28.661285}
+        - {x: 25.391083, y: -27.661285}
+        - {x: 30.391083, y: -27.661285}
+        - {x: 32.391083, y: -29.661285}
+        - {x: 39.391083, y: -29.661285}
+        - {x: 40.391083, y: -26.661285}
+        - {x: 38.391083, y: -21.661285}
+        - {x: 64.39108, y: -5.6612854}
+        - {x: 63.391083, y: 24.338715}
+        - {x: 39.391083, y: 32.338715}
+        - {x: -2.6089172, y: 32.338715}
+        - {x: -29.608917, y: -22.661285}
+        - {x: -29.608917, y: -39.661285}
+        - {x: 64.39108, y: -39.661285}
+        - {x: 64.39108, y: -29.661285}
+        - {x: 60.391083, y: -28.661285}
+    - name: zombie_80
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 457
+        width: 84
+        height: 74
+      alignment: 9
+      pivot: {x: 0.32565308, y: 0.58658415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.64514, y: -31.407227}
+        - {x: 53.64514, y: -24.407227}
+        - {x: 56.64514, y: -20.407227}
+        - {x: 56.64514, y: -12.407227}
+        - {x: 55.64514, y: -10.407227}
+        - {x: 44.64514, y: 10.592773}
+        - {x: 22.645142, y: 30.592773}
+        - {x: -9.354858, y: 30.592773}
+        - {x: -27.354858, y: -16.407227}
+        - {x: -27.354858, y: -43.407227}
+        - {x: 56.64514, y: -43.407227}
+        - {x: 56.64514, y: -35.407227}
+        - {x: 40.64514, y: -33.407227}
+    - name: zombie_81
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 458
+        width: 69
+        height: 78
+      alignment: 9
+      pivot: {x: 0.36734495, y: 0.55867434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43.6532, y: -31.5766}
+        - {x: 43.6532, y: -21.5766}
+        - {x: 42.6532, y: -20.5766}
+        - {x: 21.653198, y: 34.4234}
+        - {x: -8.346802, y: 34.4234}
+        - {x: -25.346802, y: -11.576599}
+        - {x: -25.346802, y: -43.5766}
+        - {x: 43.6532, y: -43.5766}
+        - {x: 43.6532, y: -36.5766}
+        - {x: 38.6532, y: -36.5766}
+    - name: zombie_82
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 457
+        width: 57
+        height: 83
+      alignment: 9
+      pivot: {x: 0.45182505, y: 0.5110279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.245972, y: -27.415314}
+        - {x: 31.245972, y: 2.5846863}
+        - {x: 14.245972, y: 40.584686}
+        - {x: -10.754028, y: 40.584686}
+        - {x: -25.754028, y: 10.584686}
+        - {x: -25.754028, y: -42.415314}
+        - {x: 31.245972, y: -42.415314}
+        - {x: 31.245972, y: -36.415314}
+        - {x: 26.245972, y: -35.415314}
+    - name: zombie_83
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 523
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_84
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 522
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 24.5}
+        - {x: -11, y: 24.5}
+        - {x: -21, y: 16.5}
+        - {x: -21, y: -17.5}
+        - {x: -18, y: -24.5}
+        - {x: 14, y: -24.5}
+        - {x: 14, y: 15.5}
+        - {x: 9, y: 23.5}
+    - name: zombie_85
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 319
+        width: 50
+        height: 99
+      alignment: 9
+      pivot: {x: 0.4267742, y: 0.4907544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.33871078, y: 50.415314}
+        - {x: -21.33871, y: 40.415314}
+        - {x: -21.33871, y: -48.584686}
+        - {x: 17.66129, y: -48.584686}
+        - {x: 28.66129, y: -34.584686}
+        - {x: 28.66129, y: 50.415314}
+    - name: zombie_86
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 319
+        width: 56
+        height: 114
+      alignment: 9
+      pivot: {x: 0.67979515, y: 0.42773786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.068527, y: 65.237885}
+        - {x: -38.068527, y: 57.237885}
+        - {x: -38.068527, y: -17.762115}
+        - {x: -19.068527, y: -48.762115}
+        - {x: 17.931473, y: -48.762115}
+        - {x: 17.931473, y: 37.237885}
+        - {x: -22.068527, y: 65.237885}
+    - name: zombie_87
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 309
+        width: 53
+        height: 63
+      alignment: 9
+      pivot: {x: 0.3100275, y: 0.7615206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.4314575, y: 15.0242}
+        - {x: -16.431458, y: 2.0242004}
+        - {x: -16.431458, y: -43.9758}
+        - {x: -1.4314575, y: -47.9758}
+        - {x: 36.568542, y: -47.9758}
+        - {x: 36.568542, y: 15.0242}
+    - name: zombie_88
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 304
+        width: 43
+        height: 70
+      alignment: 9
+      pivot: {x: 0.26584855, y: 0.748444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.568512, y: -21.391083}
+        - {x: 31.568512, y: -2.3910828}
+        - {x: 31.568512, y: 13.608917}
+        - {x: 30.568512, y: 17.608917}
+        - {x: 1.568512, y: 17.608917}
+        - {x: -11.431488, y: 10.608917}
+        - {x: -11.431488, y: -46.391083}
+        - {x: -9.431488, y: -50.391083}
+        - {x: 4.568512, y: -52.391083}
+        - {x: 31.568512, y: -52.391083}
+        - {x: 31.568512, y: -22.391083}
+        - {x: 30.568512, y: -21.391083}
+    - name: zombie_89
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 315
+        width: 42
+        height: 73
+      alignment: 9
+      pivot: {x: 0.39103264, y: 0.5752321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.42337, y: 31.008057}
+        - {x: -16.42337, y: 12.008057}
+        - {x: -16.42337, y: -41.991943}
+        - {x: 25.57663, y: -41.991943}
+        - {x: 25.57663, y: 31.008057}
+    - name: zombie_90
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 317
+        width: 40
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 40}
+        - {x: -20, y: 23}
+        - {x: -20, y: -40}
+        - {x: 20, y: -40}
+        - {x: 20, y: 37}
+        - {x: 18, y: 40}
+    - name: zombie_91
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 319
+        width: 59
+        height: 70
+      alignment: 9
+      pivot: {x: 0.37588862, y: 0.5392277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.1774292, y: 32.25406}
+        - {x: -22.17743, y: 8.254059}
+        - {x: -22.17743, y: -37.74594}
+        - {x: 25.82257, y: -37.74594}
+        - {x: 36.82257, y: -36.74594}
+        - {x: 36.82257, y: 26.254059}
+        - {x: 26.82257, y: 32.25406}
+    - name: zombie_92
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 171
+        width: 80
+        height: 111
+      alignment: 9
+      pivot: {x: 0.7936082, y: 0.4921625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.511345, y: 56.369965}
+        - {x: -61.488655, y: 56.369965}
+        - {x: -63.488655, y: 55.369965}
+        - {x: -63.488655, y: -40.630035}
+        - {x: -47.488655, y: -54.630035}
+        - {x: 16.511345, y: -54.630035}
+        - {x: 16.511345, y: 43.369965}
+        - {x: 13.511345, y: 55.369965}
+    - name: zombie_93
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 170
+        width: 108
+        height: 88
+      alignment: 9
+      pivot: {x: 0.741653, y: 0.5889719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80.098526, y: -44.82953}
+        - {x: -35.098526, y: -51.82953}
+        - {x: 23.901474, y: -51.82953}
+        - {x: 27.901474, y: -50.82953}
+        - {x: 27.901474, y: 36.17047}
+        - {x: -56.098526, y: 36.17047}
+        - {x: -80.098526, y: 28.170471}
+    - name: zombie_94
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 169
+        width: 86
+        height: 77
+      alignment: 9
+      pivot: {x: 0.6820824, y: 0.55649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.65909, y: 34.15027}
+        - {x: -55.65909, y: -6.8497314}
+        - {x: -58.65909, y: -22.849731}
+        - {x: -58.65909, y: -42.84973}
+        - {x: 27.340912, y: -42.84973}
+        - {x: 27.340912, y: 28.150269}
+        - {x: 10.340912, y: 34.15027}
+    - name: zombie_95
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 166
+        width: 60
+        height: 86
+      alignment: 9
+      pivot: {x: 0.54349774, y: 0.5303469}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.390137, y: -45.609833}
+        - {x: 27.390137, y: 16.390167}
+        - {x: 17.390137, y: 40.390167}
+        - {x: -14.609863, y: 40.390167}
+        - {x: -14.609863, y: 38.390167}
+        - {x: -28.609863, y: 4.390167}
+        - {x: -32.609863, y: -28.609833}
+        - {x: -32.609863, y: -45.609833}
+        - {x: -17.609863, y: -45.609833}
+        - {x: -16.609863, y: -39.609833}
+        - {x: -17.609863, y: -35.609833}
+        - {x: -15.609863, y: -42.609833}
+    - name: zombie_96
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 167
+        width: 46
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5378232, y: 0.51977104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.739868, y: 42.260147}
+        - {x: -24.739868, y: -45.739853}
+        - {x: 21.260132, y: -45.739853}
+        - {x: 21.260132, y: 24.260147}
+        - {x: 11.260132, y: 42.260147}
+    - name: zombie_97
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 168
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_98
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 165
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_99
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 165
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_100
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_101
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 168
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_102
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 168
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_103
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 165
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_104
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 115
+        width: 49
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 50}
+        - {x: -24.5, y: -50}
+        - {x: 24.5, y: -50}
+        - {x: 24.5, y: 50}
+    - name: zombie_105
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 150
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_106
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 147
+        width: 124
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_107
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 150
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_108
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 150
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_109
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 150
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_110
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 14
+        width: 72
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5241653, y: 0.4714767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.260101, y: -21.520157}
+        - {x: 17.260101, y: -20.520157}
+        - {x: 12.260101, y: -20.520157}
+        - {x: 7.2601013, y: -23.520157}
+        - {x: 6.2601013, y: -21.520157}
+        - {x: 18.260101, y: -19.520157}
+        - {x: 29.260101, y: -25.520157}
+        - {x: 34.2601, y: -21.520157}
+        - {x: 34.2601, y: 6.479843}
+        - {x: 15.260101, y: 55.479843}
+        - {x: -9.739899, y: 64.47984}
+        - {x: -37.7399, y: 64.47984}
+        - {x: -37.7399, y: -35.520157}
+        - {x: -1.7398987, y: -57.520157}
+        - {x: 22.260101, y: -57.520157}
+        - {x: 34.2601, y: -54.520157}
+        - {x: 34.2601, y: -45.520157}
+        - {x: 31.260101, y: -37.520157}
+    - name: zombie_111
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 134
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_112
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 134
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_113
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 134
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_114
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 134
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_115
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 131
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_116
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 134
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_117
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 134
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_118
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 134
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_119
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 132
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_120
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 131
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_121
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 134
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_122
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 134
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_123
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 134
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_124
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 134
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_125
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 134
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_126
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 13
+        width: 101
+        height: 114
+      alignment: 9
+      pivot: {x: 0.6378139, y: 0.51526207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.580795, y: -36.739876}
+        - {x: 31.580795, y: -32.739876}
+        - {x: 36.580795, y: -27.739876}
+        - {x: 36.580795, y: 37.260124}
+        - {x: 31.580795, y: 55.260124}
+        - {x: -59.419205, y: 55.260124}
+        - {x: -63.419205, y: 49.260124}
+        - {x: -63.419205, y: 44.260124}
+        - {x: -54.419205, y: 40.260124}
+        - {x: -64.419205, y: -12.739876}
+        - {x: -64.419205, y: -31.739876}
+        - {x: -5.4192047, y: -58.739876}
+        - {x: 8.580795, y: -58.739876}
+        - {x: 36.580795, y: -53.739876}
+        - {x: 36.580795, y: -45.739876}
+        - {x: 35.580795, y: -41.739876}
+    - name: zombie_127
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 115
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_128
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_129
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_130
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 118
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_131
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_132
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 115
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_133
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_134
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_135
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_136
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 118
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_137
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_138
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 118
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_139
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 118
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombie_140
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 11
+        width: 77
+        height: 90
+      alignment: 9
+      pivot: {x: 0.59038454, y: 0.5193317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.45961, y: 43.260147}
+        - {x: -40.45961, y: 25.260147}
+        - {x: -45.45961, y: -0.7398529}
+        - {x: -45.45961, y: -15.739853}
+        - {x: -29.45961, y: -14.739853}
+        - {x: -20.45961, y: -10.739853}
+        - {x: -42.45961, y: -27.739853}
+        - {x: -45.45961, y: -35.739853}
+        - {x: -45.45961, y: -46.739853}
+        - {x: 31.54039, y: -46.739853}
+        - {x: 31.54039, y: 43.260147}
+    - name: zombie_141
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 20
+        width: 57
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6221459}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.5, y: -16.038795}
+        - {x: 28.5, y: 10.961205}
+        - {x: 24.5, y: 18.961205}
+        - {x: 13.5, y: 16.961205}
+        - {x: 11.5, y: 12.961205}
+        - {x: -8.5, y: 8.961205}
+        - {x: -12.5, y: 5.9612045}
+        - {x: -13.5, y: 2.9612045}
+        - {x: -13.5, y: -2.0387955}
+        - {x: -13.5, y: 5.9612045}
+        - {x: -11.5, y: 6.9612045}
+        - {x: -7.5, y: 10.961205}
+        - {x: -6.5, y: 10.961205}
+        - {x: -2.5, y: 13.961205}
+        - {x: 9.5, y: 19.961205}
+        - {x: 14.5, y: 23.961205}
+        - {x: 15.5, y: 26.961205}
+        - {x: 14.5, y: 27.961205}
+        - {x: -2.5, y: 27.961205}
+        - {x: -6.5, y: 26.961205}
+        - {x: -28.5, y: 4.9612045}
+        - {x: -28.5, y: -30.038795}
+        - {x: -11.5, y: -46.038795}
+        - {x: 24.5, y: -46.038795}
+        - {x: 28.5, y: -41.038795}
+        - {x: 28.5, y: -35.038795}
+        - {x: 20.5, y: -34.038795}
+    - name: zombie_142
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 15
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 1.0862706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -3.9684448}
+        - {x: -23, y: -10.968445}
+        - {x: -23, y: -41.968445}
+        - {x: -7, y: -49.968445}
+        - {x: 23, y: -49.968445}
+        - {x: 23, y: -10.968445}
+        - {x: 22, y: -3.9684448}
+    - name: zombie_143
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 14
+        width: 42
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5414269, y: 1.121393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.739929, y: -4.2487526}
+        - {x: -22.73993, y: -6.2487526}
+        - {x: -22.73993, y: -24.248753}
+        - {x: -17.73993, y: -39.248753}
+        - {x: 19.26007, y: -39.248753}
+        - {x: 19.26007, y: -7.2487526}
+        - {x: 13.260071, y: -4.2487526}
+    - name: zombie_144
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 20
+        width: 41
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7330216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 14.95079}
+        - {x: -20.5, y: -8.04921}
+        - {x: -20.5, y: -38.04921}
+        - {x: -16.5, y: -41.04921}
+        - {x: 20.5, y: -41.04921}
+        - {x: 20.5, y: 10.95079}
+        - {x: 16.5, y: 14.95079}
+    - name: zombie_145
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 20
+        width: 40
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4565033, y: 1.1089644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
