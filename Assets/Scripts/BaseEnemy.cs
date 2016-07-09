@@ -7,17 +7,18 @@ public class BaseEnemy : MonoBehaviour
 	protected bool dead = false;
 	protected bool grounded = false;
 	protected bool canJump = false;
+	protected bool facingLeft = false;
 
-	public Transform groundCheck;
+	protected Transform groundCheck;
 
 	protected Rigidbody2D body;
+	Animator anim;
 
 	protected int speed = 1;
 	protected int damage = 0;
 	protected int hp = 1;
 	protected float jumpForce = 200;
-	float groundRadius = 0.2f;
-	public LayerMask whatIsGround;
+	protected float attackRange = 0.5f;
 
 	Transform player;
 
@@ -27,6 +28,7 @@ public class BaseEnemy : MonoBehaviour
 		body = GetComponent<Rigidbody2D> ();
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		groundCheck = transform.Find("GroundCheck");
+		anim = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +36,7 @@ public class BaseEnemy : MonoBehaviour
 	{
 //		Debug.Log (player.position.x + "," + player.position.y + "," + player.position.z);
 		grounded = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
+		anim.SetBool ("MGround", grounded);
 
 		if (grounded) {
 			canJump = true;
@@ -41,17 +44,64 @@ public class BaseEnemy : MonoBehaviour
 
 	}
 
+	protected bool isPlayerOnLeft() {
+		return transform.position.x > player.position.x;
+	}
+
+	protected void correctDirection() {
+		bool playerOnLeft = isPlayerOnLeft();
+
+		if ((Mathf.Abs(transform.position.x - player.position.x) > 0.5) && ((!facingLeft && playerOnLeft) || (facingLeft && !playerOnLeft))) {
+			Flip ();
+		}
+	}
+
+	protected bool isSameGroundLevel() {
+		return Mathf.Abs (transform.position.y - player.position.y) < 0.5;
+	}
+
+	protected bool isInAttackRange() {
+		return Mathf.Abs (transform.position.x - player.position.x) < attackRange && isSameGroundLevel();
+	}
+
 	protected void FixedUpdate ()
 	{
 		
-		bool playerOnLeft = transform.position.x > player.position.x;
-		int dir = playerOnLeft ? -1 : 1;
-		body.velocity = new Vector2 (transform.localScale.x * speed * dir, body.velocity.y);
+		correctDirection ();
 
-		if (canJump && Mathf.Abs (transform.position.x - player.position.x) < 0.5) {
+//		int dir = isPlayerOnLeft() ? -1 : 1;
+		float hSpeed = transform.localScale.x * speed;
+		body.velocity = new Vector2 (hSpeed, body.velocity.y);
+		anim.SetFloat ("MSpeed", Mathf.Abs (hSpeed));
+
+//		Debug.Log (transform.position.y + " vs " + player.position.y);
+
+		if (canJump && Mathf.Abs (transform.position.x - player.position.x) < 1 && transform.position.y + 0.5 < player.position.y) {
 			canJump = false;
 			Jump ();
 		}
+
+		if (isInAttackRange ()) {
+			Attack ();
+		}
+
+	}
+
+	protected void Attack(){
+		anim.SetBool("MAttack",true);
+
+	}
+
+	//this is used when event is triggered in ZombieAttack animation
+	protected void AttackDone(){
+		anim.SetBool ("MAttack", false);
+	}
+
+	protected void Flip(){
+		facingLeft = !facingLeft;
+		Vector3 theScale = transform.localScale;
+		theScale.x *= -1;
+		transform.localScale = theScale;
 	}
 
 	protected void Jump ()

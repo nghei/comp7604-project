@@ -8,6 +8,7 @@ public class Zombie : BaseEnemy {
 		base.Start ();
 		speed = 1;
 		damage = 1;
+		attackRange = 0.5f;
 	}
 	
 	// Update is called once per frame
