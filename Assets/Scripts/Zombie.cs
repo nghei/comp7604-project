@@ -8,7 +8,7 @@ public class Zombie : BaseEnemy {
 		base.Start ();
 		speed = 1;
 		damage = 1;
-		hp = 25;
+		hp = 500;
 		attackRange = 0.5f;
 	}
 	
@@ -17,13 +17,19 @@ public class Zombie : BaseEnemy {
 		base.Update ();
 
 		if (hp <= 0) {
+			Debug.Log ("Zombie Die");
+			gameObject.GetComponent<Animation> ().Play ("ZombieDead");
 			Destroy (gameObject);
 		}
 	}
 
 	public void Damage(int damage){
-		Debug.Log("Zombie is attacked");
+		
+		Debug.Log("WTF Zombie is attacked");
 		hp -= damage;
 		gameObject.GetComponent<Animation> ().Play ("ZombieHit");
+		Debug.Log (gameObject);
+		Debug.Log ("hp: " + hp);
+		Debug.Log ("damage: " + damage);
 	}
 }
