@@ -13,7 +13,7 @@ public class BoxerControllerScript : MonoBehaviour {
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
-	public float jumpForce = 700;
+	public float jumpForce = 5000;
 
 	void Awake(){
 		character = GetComponent<Rigidbody2D>();
