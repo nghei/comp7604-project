@@ -24,15 +24,15 @@ public class BoxerControllerScript : MonoBehaviour {
 
 
 	void Awake(){
-		character = GetComponent<Rigidbody2D>();
-		anim = GetComponent<Animator> ();
-		attackTrigger.enabled = false;
+		
 
 	}
 
 	// Use this for initialization
 	void Start () {
-	
+		character = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator> ();
+		attackTrigger.enabled = false;
 	}
 	
 	// Update is called once per frame

@@ -21,7 +21,8 @@ public class Zombie : BaseEnemy {
 		}
 	}
 
-	void Damage(int damage){
+	public void Damage(int damage){
+		Debug.Log("Zombie is attacked");
 		hp -= damage;
 		gameObject.GetComponent<Animation> ().Play ("ZombieHit");
 	}
