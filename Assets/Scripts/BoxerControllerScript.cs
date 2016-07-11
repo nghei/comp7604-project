@@ -15,9 +15,18 @@ public class BoxerControllerScript : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 5000;
 
+	private bool attacking = false;
+
+	private float attackTimer = 0;
+	private float attackCd = 0.3f;
+
+	public Collider2D attackTrigger;
+
+
 	void Awake(){
 		character = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator> ();
+		attackTrigger.enabled = false;
 
 	}
 
@@ -52,6 +61,25 @@ public class BoxerControllerScript : MonoBehaviour {
 			character.AddForce(new Vector2(0,jumpForce));
 			
 		}
+
+		if (Input.GetKeyDown(KeyCode.DownArrow) && !attacking) {
+			Debug.Log ("attack!");
+			attacking = true;
+			attackTimer = attackCd;
+
+			attackTrigger.enabled = true;
+		}
+
+		if (attacking) {
+			if(attackTimer > 0){
+				attackTimer -= Time.deltaTime;
+			}else{
+				attacking = false;
+				attackTrigger.enabled = false;
+			}
+		}
+
+		anim.SetBool ("Attacking", attacking);
 	}
 
 	void Flip(){
