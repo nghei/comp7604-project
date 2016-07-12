@@ -8,6 +8,8 @@ public class BaseEnemy : MonoBehaviour
 	protected bool grounded = false;
 	protected bool canJump = false;
 	protected bool facingLeft = false;
+	protected bool beingAttacked = false;
+	protected bool isDying = false;
 
 	protected Transform groundCheck;
 
@@ -40,6 +42,11 @@ public class BaseEnemy : MonoBehaviour
 
 		if (grounded) {
 			canJump = true;
+		}
+
+		if(hp <= 0){
+			isDying = true;
+			anim.SetBool("IsDying", isDying);
 		}
 
 	}
@@ -76,15 +83,14 @@ public class BaseEnemy : MonoBehaviour
 
 //		Debug.Log (transform.position.y + " vs " + player.position.y);
 
-		if (canJump && Mathf.Abs (transform.position.x - player.position.x) < 1 && transform.position.y + 0.5 < player.position.y) {
+		if (!beingAttacked && isDying && canJump && Mathf.Abs (transform.position.x - player.position.x) < 1 && transform.position.y + 0.5 < player.position.y) {
 			canJump = false;
 			Jump ();
 		}
 
 		if (isInAttackRange ()) {
 			Attack ();
-		}
-
+		}		
 	}
 
 	protected void Attack(){
@@ -97,6 +103,17 @@ public class BaseEnemy : MonoBehaviour
 		anim.SetBool ("MAttack", false);
 	}
 
+	//this is used when event is triggered in ZombieHit animation
+	protected void BeingAttackDone(){
+		beingAttacked = false;
+		Debug.Log("done being attacked!");
+		anim.SetBool ("BeingAttacked", beingAttacked);
+	}
+
+	protected void DyingDone(){
+		Destroy(gameObject);
+	}
+
 	protected void Flip(){
 		facingLeft = !facingLeft;
 		Vector3 theScale = transform.localScale;
@@ -107,6 +124,16 @@ public class BaseEnemy : MonoBehaviour
 	protected void Jump ()
 	{
 		body.AddForce (new Vector2 (0, jumpForce));
+	}
+
+	protected void Damage(int damage){
+		
+		Debug.Log("WTF Zombie is attacked");
+		hp -= damage;
+		beingAttacked = true;
+		anim.SetBool ("BeingAttacked", beingAttacked);	
+		Debug.Log ("BaseEnemyhp: " + hp);
+		Debug.Log ("damage: " + damage);
 	}
 
 
