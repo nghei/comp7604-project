@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaseEnemy : MonoBehaviour
+public class BaseEnemyMod : MonoBehaviour
 {
 
 	protected bool dead = false;
