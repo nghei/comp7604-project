@@ -22,6 +22,11 @@ public class Remover : MonoBehaviour
 
 			// ... instantiate the splash where the player falls in.
 			Instantiate(splash, col.transform.position, transform.rotation);
+			// Set all Enemy objects to inactive.
+			foreach (GameObject go in GameObject.FindGameObjectsWithTag("Enemy"))
+			{
+				Destroy(go);
+			}
 			// ... destroy the player.
 			Destroy (col.gameObject);
 			// ... reload the level.
@@ -33,7 +38,8 @@ public class Remover : MonoBehaviour
 			Instantiate(splash, col.transform.position, transform.rotation);
 
 			// Destroy the enemy.
-			Destroy (col.gameObject);	
+			// Destroy (col.gameObject);	
+			col.gameObject.SetActive(false);
 		}
 	}
 
@@ -43,5 +49,6 @@ public class Remover : MonoBehaviour
 		yield return new WaitForSeconds(2);
 		// ... and then reload the level.
 		Application.LoadLevel(Application.loadedLevel);
+		// Reset Player ??
 	}
 }
