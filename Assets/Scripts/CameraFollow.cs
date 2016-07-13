@@ -16,6 +16,7 @@ public class CameraFollow : MonoBehaviour
 
 	void Awake ()
 	{
+		Application.targetFrameRate = 300;
 		// Setting up the reference.
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 	}

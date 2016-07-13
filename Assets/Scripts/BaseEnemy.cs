@@ -7,6 +7,8 @@ public class BaseEnemy : MonoBehaviour
 	protected bool dead = false;
 	protected bool grounded = false;
 	protected bool canJump = false;
+	protected bool isJumping = false;
+	protected float jumpTime = 0.0f;
 	protected bool facingLeft = false;
 	protected bool beingAttacked = false;
 	protected bool isDying = false;
@@ -16,12 +18,14 @@ public class BaseEnemy : MonoBehaviour
 	protected Rigidbody2D body;
 	Animator anim;
 
-	protected int speed = 1;
-	protected int damage = 0;
-	protected int hp = 1;
-	protected float jumpForce = 200;
-	protected float attackRange = 0.5f;
+	public int speed = 1;
+	public int damage = 0;
+	public int hp = 1;
+	public float jumpForce = 200;
+	public float attackRange = 0.5f;
 
+	private bool lastJumpFail;
+	
 	Transform player;
 
 	// Use this for initialization
@@ -33,9 +37,19 @@ public class BaseEnemy : MonoBehaviour
 		anim = GetComponent<Animator> ();
 	}
 	
+	void OnCollisionEnter2D (Collision2D col)
+	{
+		if (col.collider.tag != "Player")
+		{
+			isJumping = false;
+		}
+	}
+
 	// Update is called once per frame
 	protected void Update ()
 	{
+		HandleJumping();
+		
 //		Debug.Log (player.position.x + "," + player.position.y + "," + player.position.z);
 		grounded = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
 		anim.SetBool ("MGround", grounded);
@@ -83,7 +97,7 @@ public class BaseEnemy : MonoBehaviour
 
 //		Debug.Log (transform.position.y + " vs " + player.position.y);
 
-		if (!beingAttacked && isDying && canJump && Mathf.Abs (transform.position.x - player.position.x) < 1 && transform.position.y + 0.5 < player.position.y) {
+		if (!beingAttacked && !isDying && canJump && Mathf.Abs (transform.position.x - player.position.x) < 1 && transform.position.y + 0.5 < player.position.y) {
 			canJump = false;
 			Jump ();
 		}
@@ -124,6 +138,26 @@ public class BaseEnemy : MonoBehaviour
 	protected void Jump ()
 	{
 		body.AddForce (new Vector2 (0, jumpForce));
+		canJump = false;
+		jumpTime = Time.time;
+		isJumping = true;
+		transform.gameObject.layer = LayerMask.NameToLayer("PassThru");
+	}
+
+	void HandleJumping()
+	{
+		// If the BaseEnemy is jumping up, allow it to pass through the Ground layer (by moving the BaseEnemy to the layer "PassThru").
+		if (!isJumping || GetComponent<Rigidbody2D>().velocity.y < 0)
+		{
+			// If BaseEnemy was jumping, move it back to Enemies layer
+			if (Time.time > jumpTime + 0.1f)
+			{
+				if (transform.gameObject.layer != LayerMask.NameToLayer("Enemies"))
+				{
+					transform.gameObject.layer = LayerMask.NameToLayer("Enemies");
+				}
+			}
+		}
 	}
 
 	protected void Damage(int damage){
@@ -135,6 +169,5 @@ public class BaseEnemy : MonoBehaviour
 		Debug.Log ("BaseEnemyhp: " + hp);
 		Debug.Log ("damage: " + damage);
 	}
-
-
+	
 }
