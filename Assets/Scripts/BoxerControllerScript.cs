@@ -4,7 +4,7 @@ using System.Collections;
 public class BoxerControllerScript : MonoBehaviour {
 
 	[HideInInspector]
-	public bool jump = false;				// Condition for whether the player should jump.
+	public bool jump = false;				// Condition for whether the player can jump.
 	[HideInInspector]
 	public float jumpTime = 0.0f;				// Tracks last time the player takes off ground.
 	[HideInInspector]
@@ -61,38 +61,55 @@ public class BoxerControllerScript : MonoBehaviour {
 			Flip ();
 		else if (move < 0 && !facingLeft)
 			Flip ();
+
+		if (jump)
+		{
+			anim.SetBool ("Ground", false);
+			character.AddForce(new Vector2(0, jumpForce));
+			jump = false;
+		}
+		
 	}
 
-	void Update(){
+	void Update()
+	{
 		HandleJumping();
+		
 		// should not get input directly, should do it in input manager
-		if (grounded && Input.GetKeyDown (KeyCode.UpArrow)) {
-			anim.SetBool ("Ground", false);
-			character.AddForce(new Vector2(0,jumpForce));
-			jump = true;
-			jumpTime = Time.time;
-			isJumping = true;
-			hero.layer = LayerMask.NameToLayer("PassThru");
-		}
-
-		if (Input.GetKeyDown(KeyCode.DownArrow) && !attacking && !isJumping) {
-			Debug.Log ("attack!");
-			attacking = true;
-			attackTimer = attackCd;
-
-			attackTrigger.enabled = true;
-		}
-
-		if (attacking) {
-			if(attackTimer > 0){
-				attackTimer -= Time.deltaTime;
-			}else{
-				attacking = false;
-				attackTrigger.enabled = false;
+		if (!isJumping || GetComponent<Rigidbody2D>().velocity.y < 0)
+		{
+			if (grounded && !attacking && Input.GetKeyDown (KeyCode.UpArrow)) {
+				jump = true;
+				jumpTime = Time.time;
+				isJumping = true;
+				hero.layer = LayerMask.NameToLayer("PassThru");
 			}
-		}
 
-		anim.SetBool ("Attacking", attacking);
+			if (Input.GetKeyDown(KeyCode.DownArrow) && !attacking) {
+				Debug.Log ("attack!");
+				attacking = true;
+				attackTimer = attackCd;
+
+				attackTrigger.enabled = true;
+			}
+
+			if (attacking) {
+				if(attackTimer > 0){
+					attackTimer -= Time.deltaTime;
+				}else{
+					attacking = false;
+					attackTrigger.enabled = false;
+				}
+			}
+
+			anim.SetBool ("Attacking", attacking);
+		}
+	}
+	
+	void OnCollisionEnter2D (Collision2D col)
+	{
+		Debug.Log(col.collider.tag);
+		isJumping = false;
 	}
 
 	void Flip(){

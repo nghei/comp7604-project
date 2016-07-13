@@ -63,7 +63,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 475012}
   m_RootOrder: 0
@@ -76,7 +75,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.9, y: 2.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 438438}
   - {fileID: 476604}
@@ -91,7 +89,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 475012}
   m_RootOrder: 1
@@ -154,7 +151,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 197138}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 24ac79603fb61400588e37d9f6fe952a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.2}
@@ -202,6 +199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95d582f7f765460f86d623773554b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jump: 0
+  jumpTime: 0
+  isJumping: 0
   maxSpeed: 10
   character: {fileID: 0}
   groundCheck: {fileID: 438438}
@@ -209,6 +209,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294966783
   jumpForce: 700
+  attackTrigger: {fileID: 0}
 --- !u!124 &12418944
 Behaviour:
   m_ObjectHideFlags: 1
@@ -252,7 +253,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 24ac79603fb61400588e37d9f6fe952a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197138}
