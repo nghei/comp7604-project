@@ -26,11 +26,14 @@ public class BoxerControllerScript : MonoBehaviour {
 
 	private bool attacking = false;
 
+	public float hp = 100;
 	private float attackTimer = 0;
-	private float attackCd = 0.3f;
+	public float attackCd = 0.3f;
 
 	public Collider2D attackTrigger;
 
+	private SpriteRenderer healthBar;
+	private Vector3 healthScale;
 
 	void Awake(){
 	}
@@ -40,6 +43,8 @@ public class BoxerControllerScript : MonoBehaviour {
 		// Setting up references.
 		hero = GameObject.FindGameObjectWithTag("Player");
 		character = GetComponent<Rigidbody2D>();
+		healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
+		healthScale = healthBar.transform.localScale;
 		anim = GetComponent<Animator> ();
 		attackTrigger.enabled = false;
 	}
@@ -112,6 +117,11 @@ public class BoxerControllerScript : MonoBehaviour {
 		isJumping = false;
 	}
 
+	public bool isFacingLeft()
+	{
+		return facingLeft;
+	}
+
 	void Flip(){
 		facingLeft = !facingLeft;
 		Vector3 theScale = transform.localScale;
@@ -134,4 +144,20 @@ public class BoxerControllerScript : MonoBehaviour {
 			}
 		}
 	}
+
+	public void Damage(float damage)
+	{
+		hp -= damage;
+		UpdateHealthBar();
+	}
+
+	public void UpdateHealthBar ()
+	{
+		// Set the health bar's colour to proportion of the way between green and red based on the player's health.
+		healthBar.material.color = Color.Lerp(Color.green, Color.red, 1 - hp * 0.01f);
+
+		// Set the scale of the health bar to be proportional to the player's health.
+		healthBar.transform.localScale = new Vector3(healthScale.x * hp * 0.01f, 1, 1);
+	}
+
 }

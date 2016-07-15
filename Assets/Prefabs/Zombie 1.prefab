@@ -44,6 +44,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 440508}
   m_RootOrder: 0
@@ -55,7 +56,8 @@ Transform:
   m_GameObject: {fileID: 162894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.05, y: 0.64, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 425830}
   m_Father: {fileID: 0}
@@ -85,7 +87,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 162894}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 24ac79603fb61400588e37d9f6fe952a, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
@@ -120,10 +122,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  damage: 0
-  hp: 1
+  damage: 10
+  hp: 50
   jumpForce: 200
   attackRange: 0.5
+  attackCd: 0.5
 --- !u!212 &21229386
 SpriteRenderer:
   m_ObjectHideFlags: 1

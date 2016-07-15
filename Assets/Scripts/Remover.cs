@@ -12,7 +12,7 @@ public class Remover : MonoBehaviour
 		if(col.gameObject.tag == "Player")
 		{
 			// .. stop the camera tracking the player
-			GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>().enabled = false;
+			// GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>().enabled = false;
 
 			// .. stop the Health Bar following the player
 			if(GameObject.FindGameObjectWithTag("HealthBar").activeSelf)
@@ -28,7 +28,9 @@ public class Remover : MonoBehaviour
 				Destroy(go);
 			}
 			// ... destroy the player.
-			Destroy (col.gameObject);
+			// Destroy (col.gameObject);
+			col.gameObject.SetActive(false);
+
 			// ... reload the level.
 			StartCoroutine("ReloadGame");
 		}
