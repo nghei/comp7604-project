@@ -1,0 +1,2042 @@
+fileFormatVersion: 2
+guid: d428f1965c91242bf99e644dbb7c95cf
+timeCreated: 1468568401
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: megaman7_megaman_sheet_0
+    21300002: megaman7_megaman_sheet_1
+    21300004: megaman7_megaman_sheet_2
+    21300006: megaman7_megaman_sheet_3
+    21300008: megaman7_megaman_sheet_4
+    21300010: megaman7_megaman_sheet_5
+    21300012: megaman7_megaman_sheet_6
+    21300014: megaman7_megaman_sheet_7
+    21300016: megaman7_megaman_sheet_8
+    21300018: megaman7_megaman_sheet_9
+    21300020: megaman7_megaman_sheet_10
+    21300022: megaman7_megaman_sheet_11
+    21300024: megaman7_megaman_sheet_12
+    21300026: megaman7_megaman_sheet_13
+    21300028: megaman7_megaman_sheet_14
+    21300030: megaman7_megaman_sheet_15
+    21300032: megaman7_megaman_sheet_16
+    21300034: megaman7_megaman_sheet_17
+    21300036: megaman7_megaman_sheet_18
+    21300038: megaman7_megaman_sheet_19
+    21300040: megaman7_megaman_sheet_20
+    21300042: megaman7_megaman_sheet_21
+    21300044: megaman7_megaman_sheet_22
+    21300046: megaman7_megaman_sheet_23
+    21300048: megaman7_megaman_sheet_24
+    21300050: megaman7_megaman_sheet_25
+    21300052: megaman7_megaman_sheet_26
+    21300054: megaman7_megaman_sheet_27
+    21300056: megaman7_megaman_sheet_28
+    21300058: megaman7_megaman_sheet_29
+    21300060: megaman7_megaman_sheet_30
+    21300062: megaman7_megaman_sheet_31
+    21300064: megaman7_megaman_sheet_32
+    21300066: megaman7_megaman_sheet_33
+    21300068: megaman7_megaman_sheet_34
+    21300070: megaman7_megaman_sheet_35
+    21300072: megaman7_megaman_sheet_36
+    21300074: megaman7_megaman_sheet_37
+    21300076: megaman7_megaman_sheet_38
+    21300078: megaman7_megaman_sheet_39
+    21300080: megaman7_megaman_sheet_40
+    21300082: megaman7_megaman_sheet_41
+    21300084: megaman7_megaman_sheet_42
+    21300086: megaman7_megaman_sheet_43
+    21300088: megaman7_megaman_sheet_44
+    21300090: megaman7_megaman_sheet_45
+    21300092: megaman7_megaman_sheet_46
+    21300094: megaman7_megaman_sheet_47
+    21300096: megaman7_megaman_sheet_48
+    21300098: megaman7_megaman_sheet_49
+    21300100: megaman7_megaman_sheet_50
+    21300102: megaman7_megaman_sheet_51
+    21300104: megaman7_megaman_sheet_52
+    21300106: megaman7_megaman_sheet_53
+    21300108: megaman7_megaman_sheet_54
+    21300110: megaman7_megaman_sheet_55
+    21300112: megaman7_megaman_sheet_56
+    21300114: megaman7_megaman_sheet_57
+    21300116: megaman7_megaman_sheet_58
+    21300118: megaman7_megaman_sheet_59
+    21300120: megaman7_megaman_sheet_60
+    21300122: megaman7_megaman_sheet_61
+    21300124: megaman7_megaman_sheet_62
+    21300126: megaman7_megaman_sheet_63
+    21300128: megaman7_megaman_sheet_64
+    21300130: megaman7_megaman_sheet_65
+    21300132: megaman7_megaman_sheet_66
+    21300134: megaman7_megaman_sheet_67
+    21300136: megaman7_megaman_sheet_68
+    21300138: megaman7_megaman_sheet_69
+    21300140: megaman7_megaman_sheet_70
+    21300142: megaman7_megaman_sheet_71
+    21300144: megaman7_megaman_sheet_72
+    21300146: megaman7_megaman_sheet_73
+    21300148: megaman7_megaman_sheet_74
+    21300150: megaman7_megaman_sheet_75
+    21300152: megaman7_megaman_sheet_76
+    21300154: megaman7_megaman_sheet_77
+    21300156: megaman7_megaman_sheet_78
+    21300158: megaman7_megaman_sheet_79
+    21300160: megaman7_megaman_sheet_80
+    21300162: megaman7_megaman_sheet_81
+    21300164: megaman7_megaman_sheet_82
+    21300166: megaman7_megaman_sheet_83
+    21300168: megaman7_megaman_sheet_84
+    21300170: megaman7_megaman_sheet_85
+    21300172: megaman7_megaman_sheet_86
+    21300174: megaman7_megaman_sheet_87
+    21300176: megaman7_megaman_sheet_88
+    21300178: megaman7_megaman_sheet_89
+    21300180: megaman7_megaman_sheet_90
+    21300182: megaman7_megaman_sheet_91
+    21300184: megaman7_megaman_sheet_92
+    21300186: megaman7_megaman_sheet_93
+    21300188: megaman7_megaman_sheet_94
+    21300190: megaman7_megaman_sheet_95
+    21300192: megaman7_megaman_sheet_96
+    21300194: megaman7_megaman_sheet_97
+    21300196: megaman7_megaman_sheet_98
+    21300198: megaman7_megaman_sheet_99
+    21300200: megaman7_megaman_sheet_100
+    21300202: megaman7_megaman_sheet_101
+    21300204: megaman7_megaman_sheet_102
+    21300206: megaman7_megaman_sheet_103
+    21300208: megaman7_megaman_sheet_104
+    21300210: megaman7_megaman_sheet_105
+    21300212: megaman7_megaman_sheet_106
+    21300214: megaman7_megaman_sheet_107
+    21300216: megaman7_megaman_sheet_108
+    21300218: megaman7_megaman_sheet_109
+    21300220: megaman7_megaman_sheet_110
+    21300222: megaman7_megaman_sheet_111
+    21300224: megaman7_megaman_sheet_112
+    21300226: megaman7_megaman_sheet_113
+    21300228: megaman7_megaman_sheet_114
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: megaman7_megaman_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 811
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 815
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 819
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 822
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 826
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 818
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 17}
+        - {x: -17, y: 3}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 15}
+        - {x: 15, y: 17}
+    - name: megaman7_megaman_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 815
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -6, y: 19}
+        - {x: -15, y: -2}
+        - {x: -17, y: -12}
+        - {x: -17, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: 17}
+        - {x: 16, y: 20}
+    - name: megaman7_megaman_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 815
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -6, y: 19}
+        - {x: -15, y: -2}
+        - {x: -17, y: -12}
+        - {x: -17, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: 17}
+        - {x: 16, y: 20}
+    - name: megaman7_megaman_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 765
+        width: 34
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5521346, y: 0.41137084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.7725754, y: 23.545166}
+        - {x: -7.7725754, y: 22.545166}
+        - {x: -16.772575, y: 1.545166}
+        - {x: -18.772575, y: -8.454834}
+        - {x: -18.772575, y: -16.454834}
+        - {x: 15.227425, y: -16.454834}
+        - {x: 15.227425, y: 20.545166}
+        - {x: 14.227425, y: 23.545166}
+    - name: megaman7_megaman_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 765
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -6, y: 19}
+        - {x: -15, y: -2}
+        - {x: -17, y: -12}
+        - {x: -17, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: 17}
+        - {x: 16, y: 20}
+    - name: megaman7_megaman_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 765
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -17, y: 0}
+        - {x: -17, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: 20}
+    - name: megaman7_megaman_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 765
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -6, y: 19}
+        - {x: -15, y: -2}
+        - {x: -17, y: -12}
+        - {x: -17, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: 17}
+        - {x: 16, y: 20}
+    - name: megaman7_megaman_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 765
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -6, y: 19}
+        - {x: -15, y: -2}
+        - {x: -17, y: -12}
+        - {x: -17, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: 17}
+        - {x: 16, y: 20}
+    - name: megaman7_megaman_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 765
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 20}
+        - {x: -17, y: 4}
+        - {x: -17, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: 20}
+    - name: megaman7_megaman_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 765
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -6, y: 19}
+        - {x: -15, y: -2}
+        - {x: -17, y: -12}
+        - {x: -17, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: 17}
+        - {x: 16, y: 20}
+    - name: megaman7_megaman_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 765
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 20}
+        - {x: -5.5, y: 19}
+        - {x: -14.5, y: -2}
+        - {x: -13.5, y: -5}
+        - {x: -16.5, y: -14}
+        - {x: -16.5, y: -20}
+        - {x: 16.5, y: -20}
+        - {x: 16.5, y: 20}
+    - name: megaman7_megaman_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 716
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -19}
+        - {x: 15.5, y: -19}
+        - {x: 16.5, y: -15}
+        - {x: 11.5, y: -8}
+        - {x: 7.5, y: -4}
+        - {x: 19.5, y: -4}
+        - {x: 22.5, y: -1}
+        - {x: 22.5, y: 6}
+        - {x: 10.5, y: 19}
+        - {x: -7.5, y: 19}
+        - {x: -22.5, y: -4}
+        - {x: -22.5, y: -19}
+        - {x: -5.5, y: -19}
+        - {x: -3.5, y: -14}
+        - {x: -3.5, y: -11}
+        - {x: -3.5, y: -18}
+    - name: megaman7_megaman_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 716
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -19}
+        - {x: 15, y: -19}
+        - {x: 16, y: -15}
+        - {x: 11, y: -8}
+        - {x: 7, y: -4}
+        - {x: 17, y: -4}
+        - {x: 23, y: 0}
+        - {x: 23, y: 12}
+        - {x: 10, y: 19}
+        - {x: -10, y: 19}
+        - {x: -23, y: -8}
+        - {x: -23, y: -19}
+        - {x: -6, y: -19}
+        - {x: -4, y: -14}
+        - {x: -4, y: -11}
+        - {x: -4, y: -18}
+    - name: megaman7_megaman_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 716
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: -19}
+        - {x: 17.5, y: -19}
+        - {x: 23.5, y: -5}
+        - {x: 23.5, y: 11}
+        - {x: 13.5, y: 19}
+        - {x: -10.5, y: 19}
+        - {x: -23.5, y: -6}
+        - {x: -23.5, y: -19}
+        - {x: -6.5, y: -19}
+        - {x: -4.5, y: -14}
+        - {x: -4.5, y: -11}
+        - {x: -4.5, y: -18}
+    - name: megaman7_megaman_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 716
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -19}
+        - {x: 15.5, y: -19}
+        - {x: 16.5, y: -15}
+        - {x: 11.5, y: -8}
+        - {x: 7.5, y: -4}
+        - {x: 19.5, y: -4}
+        - {x: 22.5, y: -1}
+        - {x: 22.5, y: 6}
+        - {x: 10.5, y: 19}
+        - {x: -7.5, y: 19}
+        - {x: -22.5, y: -4}
+        - {x: -22.5, y: -19}
+        - {x: -5.5, y: -19}
+        - {x: -3.5, y: -14}
+        - {x: -3.5, y: -11}
+        - {x: -3.5, y: -18}
+    - name: megaman7_megaman_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 716
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -19}
+        - {x: 15.5, y: -19}
+        - {x: 16.5, y: -15}
+        - {x: 11.5, y: -8}
+        - {x: 7.5, y: -4}
+        - {x: 19.5, y: -4}
+        - {x: 22.5, y: -1}
+        - {x: 22.5, y: 6}
+        - {x: 10.5, y: 19}
+        - {x: -7.5, y: 19}
+        - {x: -22.5, y: -4}
+        - {x: -22.5, y: -19}
+        - {x: -5.5, y: -19}
+        - {x: -3.5, y: -14}
+        - {x: -3.5, y: -11}
+        - {x: -3.5, y: -18}
+    - name: megaman7_megaman_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 716
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -19}
+        - {x: 15.5, y: -19}
+        - {x: 16.5, y: -15}
+        - {x: 11.5, y: -8}
+        - {x: 7.5, y: -4}
+        - {x: 19.5, y: -4}
+        - {x: 22.5, y: -1}
+        - {x: 22.5, y: 6}
+        - {x: 10.5, y: 19}
+        - {x: -7.5, y: 19}
+        - {x: -22.5, y: -4}
+        - {x: -22.5, y: -19}
+        - {x: -5.5, y: -19}
+        - {x: -3.5, y: -14}
+        - {x: -3.5, y: -11}
+        - {x: -3.5, y: -18}
+    - name: megaman7_megaman_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 716
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 19.5}
+        - {x: -15, y: 19.5}
+        - {x: -22, y: 8.5}
+        - {x: -22, y: -19.5}
+        - {x: 17, y: -19.5}
+        - {x: 22, y: -6.5}
+        - {x: 22, y: 11.5}
+    - name: megaman7_megaman_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 716
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 19.5}
+        - {x: -20, y: 13.5}
+        - {x: -20, y: -19.5}
+        - {x: 17, y: -19.5}
+        - {x: 20, y: -8.5}
+        - {x: 20, y: 14.5}
+        - {x: 16, y: 19.5}
+    - name: megaman7_megaman_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 666
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 19}
+        - {x: -17.5, y: 5}
+        - {x: -18.5, y: -3}
+        - {x: -18.5, y: -19}
+        - {x: 18.5, y: -19}
+        - {x: 18.5, y: 17}
+        - {x: 17.5, y: 19}
+    - name: megaman7_megaman_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 666
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 19}
+        - {x: -16.5, y: 5}
+        - {x: -18.5, y: -8}
+        - {x: -18.5, y: -19}
+        - {x: 18.5, y: -19}
+        - {x: 18.5, y: 19}
+    - name: megaman7_megaman_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 664
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: -3.5}
+        - {x: -16, y: -9.5}
+        - {x: -16, y: -21.5}
+        - {x: 16, y: -21.5}
+        - {x: 16, y: -4.5}
+        - {x: 13, y: 21.5}
+        - {x: -7, y: 21.5}
+        - {x: -11, y: 14.5}
+    - name: megaman7_megaman_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 656
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 29}
+        - {x: -24, y: -29}
+        - {x: 22, y: -29}
+        - {x: 24, y: -22}
+        - {x: 24, y: 27}
+        - {x: 23, y: 29}
+    - name: megaman7_megaman_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 661
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -18, y: 11}
+        - {x: -18, y: -11}
+        - {x: -13, y: -20}
+        - {x: -7, y: -24}
+        - {x: 10, y: -24}
+        - {x: 18, y: -16}
+        - {x: 18, y: 19}
+        - {x: 11, y: 24}
+    - name: megaman7_megaman_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 661
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -18, y: 11}
+        - {x: -18, y: -11}
+        - {x: -13, y: -20}
+        - {x: -7, y: -24}
+        - {x: 10, y: -24}
+        - {x: 18, y: -16}
+        - {x: 18, y: 19}
+        - {x: 11, y: 24}
+    - name: megaman7_megaman_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 669
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 16}
+        - {x: -19.5, y: -1}
+        - {x: -19.5, y: -16}
+        - {x: 19.5, y: -16}
+        - {x: 19.5, y: 0}
+        - {x: 11.5, y: 16}
+    - name: megaman7_megaman_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 617
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 617
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 18.5}
+        - {x: -16.5, y: -3.5}
+        - {x: -16.5, y: -18.5}
+        - {x: 16.5, y: -18.5}
+        - {x: 16.5, y: 18.5}
+    - name: megaman7_megaman_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 617
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 18.5}
+        - {x: -22, y: -1.5}
+        - {x: -22, y: -13.5}
+        - {x: 6, y: -18.5}
+        - {x: 18, y: -18.5}
+        - {x: 22, y: -13.5}
+        - {x: 22, y: 16.5}
+        - {x: 17, y: 18.5}
+    - name: megaman7_megaman_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 617
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 18.5}
+        - {x: -16.5, y: -3.5}
+        - {x: -16.5, y: -18.5}
+        - {x: 16.5, y: -18.5}
+        - {x: 16.5, y: 18.5}
+    - name: megaman7_megaman_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 617
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 617
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 618
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 618
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 567
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 567
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 568
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 17.5}
+        - {x: -18.5, y: 8.5}
+        - {x: -18.5, y: -17.5}
+        - {x: 18.5, y: -17.5}
+        - {x: 18.5, y: 17.5}
+    - name: megaman7_megaman_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 567
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 18.5}
+        - {x: -11, y: 17.5}
+        - {x: -18, y: -7.5}
+        - {x: -18, y: -18.5}
+        - {x: 14, y: -18.5}
+        - {x: 18, y: -17.5}
+        - {x: 18, y: 9.5}
+        - {x: 10, y: 18.5}
+    - name: megaman7_megaman_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 567
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 18}
+        - {x: -3, y: 18}
+        - {x: -21, y: -4}
+        - {x: -21, y: -15}
+        - {x: -13, y: -16}
+        - {x: -10, y: -18}
+        - {x: 11, y: -18}
+        - {x: 17, y: -16}
+        - {x: 14, y: -10}
+        - {x: 21, y: -4}
+        - {x: 21, y: 10}
+    - name: megaman7_megaman_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 567
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.5, y: 18.5}
+        - {x: -5.5, y: 17.5}
+        - {x: -23.5, y: 0.5}
+        - {x: -23.5, y: -13.5}
+        - {x: -3.5, y: -18.5}
+        - {x: 17.5, y: -18.5}
+        - {x: 23.5, y: -16.5}
+        - {x: 23.5, y: 11.5}
+        - {x: 16.5, y: 18.5}
+    - name: megaman7_megaman_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 517
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 18}
+        - {x: -3, y: 18}
+        - {x: -21, y: -4}
+        - {x: -21, y: -15}
+        - {x: -13, y: -16}
+        - {x: -10, y: -18}
+        - {x: 11, y: -18}
+        - {x: 17, y: -16}
+        - {x: 14, y: -10}
+        - {x: 21, y: -4}
+        - {x: 21, y: 10}
+    - name: megaman7_megaman_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 517
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 18.5}
+        - {x: -11, y: 17.5}
+        - {x: -18, y: -7.5}
+        - {x: -18, y: -18.5}
+        - {x: 14, y: -18.5}
+        - {x: 18, y: -17.5}
+        - {x: 18, y: 9.5}
+        - {x: 10, y: 18.5}
+    - name: megaman7_megaman_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 517
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 18.5}
+        - {x: -18.5, y: 15.5}
+        - {x: -18.5, y: -18.5}
+        - {x: 10.5, y: -18.5}
+        - {x: 18.5, y: -5.5}
+        - {x: 18.5, y: 14.5}
+        - {x: 14.5, y: 18.5}
+    - name: megaman7_megaman_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 518
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 17.5}
+        - {x: -18, y: 6.5}
+        - {x: -18, y: -16.5}
+        - {x: -17, y: -17.5}
+        - {x: 4, y: -17.5}
+        - {x: 18, y: -1.5}
+        - {x: 18, y: 6.5}
+        - {x: 9, y: 17.5}
+    - name: megaman7_megaman_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 518
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 17.5}
+        - {x: -17.5, y: 4.5}
+        - {x: -17.5, y: -17.5}
+        - {x: 15.5, y: -17.5}
+        - {x: 17.5, y: -11.5}
+        - {x: 17.5, y: 17.5}
+    - name: megaman7_megaman_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 517
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 18.5}
+        - {x: -18.5, y: 9.5}
+        - {x: -18.5, y: -18.5}
+        - {x: 14.5, y: -18.5}
+        - {x: 18.5, y: -11.5}
+        - {x: 18.5, y: 18.5}
+    - name: megaman7_megaman_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 517
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 18.5}
+        - {x: -5.5, y: 18.5}
+        - {x: -19.5, y: 7.5}
+        - {x: -19.5, y: -18.5}
+        - {x: 10.5, y: -18.5}
+        - {x: 13.5, y: -17.5}
+        - {x: 19.5, y: -8.5}
+        - {x: 19.5, y: 11.5}
+    - name: megaman7_megaman_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 518
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 17.5}
+        - {x: -21.5, y: 8.5}
+        - {x: -21.5, y: -17.5}
+        - {x: 17.5, y: -17.5}
+        - {x: 21.5, y: -10.5}
+        - {x: 21.5, y: 13.5}
+        - {x: 12.5, y: 17.5}
+    - name: megaman7_megaman_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 459
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 463
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 463
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 459
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 466
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 475
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 459
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 459
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 415
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 407
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 405
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 402
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 406
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 414
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 417
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 355
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 20}
+        - {x: -8, y: 20}
+        - {x: -19, y: 12}
+        - {x: -19, y: -20}
+        - {x: 4, y: -20}
+        - {x: 19, y: -7}
+        - {x: 19, y: 13}
+        - {x: 18, y: 14}
+    - name: megaman7_megaman_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 347
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -20, y: 22}
+        - {x: -20, y: -22}
+        - {x: -18, y: -24}
+        - {x: -3, y: -24}
+        - {x: 5, y: -20}
+        - {x: 20, y: -3}
+        - {x: 20, y: 21}
+        - {x: 11, y: 24}
+    - name: megaman7_megaman_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 344
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 25.5}
+        - {x: -19, y: 25.5}
+        - {x: -19, y: -25.5}
+        - {x: 3, y: -25.5}
+        - {x: 19, y: -6.5}
+        - {x: 19, y: 22.5}
+    - name: megaman7_megaman_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 342
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 26.5}
+        - {x: -16.5, y: 26.5}
+        - {x: -19.5, y: 24.5}
+        - {x: -19.5, y: -2.5}
+        - {x: -17.5, y: -23.5}
+        - {x: -15.5, y: -26.5}
+        - {x: -2.5, y: -26.5}
+        - {x: -0.5, y: -25.5}
+        - {x: 14.5, y: -11.5}
+        - {x: 19.5, y: 1.5}
+        - {x: 19.5, y: 21.5}
+    - name: megaman7_megaman_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 347
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -20, y: 22}
+        - {x: -20, y: -22}
+        - {x: -18, y: -24}
+        - {x: -3, y: -24}
+        - {x: 5, y: -20}
+        - {x: 20, y: -3}
+        - {x: 20, y: 21}
+        - {x: 11, y: 24}
+    - name: megaman7_megaman_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 355
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 20}
+        - {x: -8, y: 20}
+        - {x: -19, y: 12}
+        - {x: -19, y: -20}
+        - {x: 4, y: -20}
+        - {x: 19, y: -7}
+        - {x: 19, y: 13}
+        - {x: 18, y: 14}
+    - name: megaman7_megaman_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 357
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 18.5}
+        - {x: -11, y: 17.5}
+        - {x: -18, y: -7.5}
+        - {x: -18, y: -18.5}
+        - {x: 14, y: -18.5}
+        - {x: 18, y: -17.5}
+        - {x: 18, y: 9.5}
+        - {x: 10, y: 18.5}
+    - name: megaman7_megaman_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 293
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 293
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 293
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 293
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 243
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 22}
+        - {x: -20.5, y: -7}
+        - {x: -20.5, y: -22}
+        - {x: 19.5, y: -22}
+        - {x: 20.5, y: -20}
+        - {x: 20.5, y: 22}
+    - name: megaman7_megaman_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 242
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 23}
+        - {x: -20, y: 22}
+        - {x: -21, y: 15}
+        - {x: -21, y: -23}
+        - {x: 12, y: -23}
+        - {x: 21, y: 4}
+        - {x: 21, y: 23}
+    - name: megaman7_megaman_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 244
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_82
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 244
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_83
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 244
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_84
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 244
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_85
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 244
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_86
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 193
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 22}
+        - {x: -10, y: 22}
+        - {x: -16, y: 16}
+        - {x: -21, y: -13}
+        - {x: -21, y: -22}
+        - {x: 13, y: -22}
+        - {x: 19, y: -18}
+        - {x: 21, y: -12}
+        - {x: 21, y: 19}
+    - name: megaman7_megaman_sheet_87
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 193
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 22.5}
+        - {x: -11, y: 18.5}
+        - {x: -14, y: 9.5}
+        - {x: -19, y: -14.5}
+        - {x: -19, y: -22.5}
+        - {x: 19, y: -22.5}
+        - {x: 19, y: 22.5}
+    - name: megaman7_megaman_sheet_88
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 194
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 21.5}
+        - {x: -12.5, y: 11.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -16.5, y: -21.5}
+        - {x: 16.5, y: -21.5}
+        - {x: 16.5, y: 21.5}
+    - name: megaman7_megaman_sheet_89
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 193
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_90
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 193
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_91
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 193
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_92
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 193
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_93
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 145
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -20}
+        - {x: 18, y: -20}
+        - {x: 18, y: 20}
+        - {x: -11, y: 20}
+        - {x: -18, y: 12}
+    - name: megaman7_megaman_sheet_94
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 141
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 24.5}
+        - {x: -14.5, y: 24.5}
+        - {x: -19.5, y: -14.5}
+        - {x: -19.5, y: -24.5}
+        - {x: 19.5, y: -24.5}
+        - {x: 19.5, y: 7.5}
+        - {x: 14.5, y: 15.5}
+    - name: megaman7_megaman_sheet_95
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 145
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 20}
+        - {x: -18, y: 20}
+        - {x: -18, y: -20}
+        - {x: 18, y: -20}
+        - {x: 18, y: 18}
+    - name: megaman7_megaman_sheet_96
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 146
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 19}
+        - {x: -8.5, y: 19}
+        - {x: -16.5, y: 5}
+        - {x: -18.5, y: -8}
+        - {x: -18.5, y: -19}
+        - {x: 18.5, y: -19}
+        - {x: 18.5, y: -3}
+        - {x: 16.5, y: 18}
+    - name: megaman7_megaman_sheet_97
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 140
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: megaman7_megaman_sheet_98
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 147
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: -18.5}
+        - {x: 17, y: -18.5}
+        - {x: 22, y: -14.5}
+        - {x: 22, y: 18.5}
+        - {x: -10, y: 18.5}
+        - {x: -22, y: 15.5}
+        - {x: -22, y: 3.5}
+        - {x: -17, y: 0.5}
+        - {x: -14, y: -2.5}
+        - {x: -22, y: -12.5}
+        - {x: -22, y: -18.5}
+        - {x: -5, y: -18.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -10.5}
+        - {x: -3, y: -17.5}
+    - name: megaman7_megaman_sheet_99
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 96
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 19.5}
+        - {x: -14, y: 8.5}
+        - {x: -17, y: -0.5}
+        - {x: -17, y: -19.5}
+        - {x: 17, y: -19.5}
+        - {x: 17, y: 19.5}
+    - name: megaman7_megaman_sheet_100
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 96
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 19.5}
+        - {x: -17.5, y: 9.5}
+        - {x: -17.5, y: -19.5}
+        - {x: 17.5, y: -19.5}
+        - {x: 17.5, y: 18.5}
+        - {x: 15.5, y: 19.5}
+    - name: megaman7_megaman_sheet_101
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 95
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -15, y: 0}
+        - {x: -9, y: -4}
+        - {x: -17, y: -15}
+        - {x: -17, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: 20}
+    - name: megaman7_megaman_sheet_102
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 95
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 20}
+        - {x: -16.5, y: 17}
+        - {x: -21.5, y: -8}
+        - {x: -21.5, y: -20}
+        - {x: 21.5, y: -20}
+        - {x: 21.5, y: 20}
+    - name: megaman7_megaman_sheet_103
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 83
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 27}
+        - {x: -21.5, y: 14}
+        - {x: -21.5, y: -18}
+        - {x: -15.5, y: -27}
+        - {x: 10.5, y: -27}
+        - {x: 21.5, y: -22}
+        - {x: 21.5, y: 15}
+        - {x: 8.5, y: 27}
+    - name: megaman7_megaman_sheet_104
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 86
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -18, y: 11}
+        - {x: -18, y: -11}
+        - {x: -13, y: -20}
+        - {x: -7, y: -24}
+        - {x: 10, y: -24}
+        - {x: 18, y: -16}
+        - {x: 18, y: 19}
+        - {x: 11, y: 24}
+    - name: megaman7_megaman_sheet_105
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 84
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26.5}
+        - {x: -19.5, y: 23.5}
+        - {x: -19.5, y: -10.5}
+        - {x: -13.5, y: -26.5}
+        - {x: 19.5, y: -26.5}
+        - {x: 19.5, y: 26.5}
+    - name: megaman7_megaman_sheet_106
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 82
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 28}
+        - {x: -6, y: 28}
+        - {x: -21, y: 15}
+        - {x: -21, y: -18}
+        - {x: -16, y: -28}
+        - {x: 17, y: -28}
+        - {x: 21, y: -19}
+        - {x: 21, y: 19}
+        - {x: 18, y: 27}
+    - name: megaman7_megaman_sheet_107
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 35
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 36}
+        - {x: -11.5, y: 36}
+        - {x: -17.5, y: 24}
+        - {x: -17.5, y: -31}
+        - {x: -16.5, y: -36}
+        - {x: 16.5, y: -36}
+        - {x: 17.5, y: -35}
+        - {x: 17.5, y: 24}
+        - {x: 16.5, y: 32}
+    - name: megaman7_megaman_sheet_108
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 35}
+        - {x: -16, y: 32}
+        - {x: -19, y: 25}
+        - {x: -19, y: -15}
+        - {x: -16, y: -30}
+        - {x: -14, y: -35}
+        - {x: 19, y: -35}
+        - {x: 19, y: 19}
+        - {x: 13, y: 35}
+    - name: megaman7_megaman_sheet_109
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 36}
+        - {x: -9, y: 36}
+        - {x: -18, y: 20}
+        - {x: -18, y: -16}
+        - {x: -11, y: -36}
+        - {x: 18, y: -36}
+        - {x: 18, y: 14}
+        - {x: 14, y: 31}
+    - name: megaman7_megaman_sheet_110
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 37
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 37}
+        - {x: -18.5, y: 20}
+        - {x: -18.5, y: -19}
+        - {x: -14.5, y: -27}
+        - {x: -9.5, y: -34}
+        - {x: -4.5, y: -37}
+        - {x: 18.5, y: -37}
+        - {x: 18.5, y: 17}
+        - {x: 11.5, y: 37}
+    - name: megaman7_megaman_sheet_111
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 35
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 36}
+        - {x: -17.5, y: 31}
+        - {x: -17.5, y: -36}
+        - {x: 17.5, y: -36}
+        - {x: 17.5, y: 24}
+        - {x: 8.5, y: 36}
+    - name: megaman7_megaman_sheet_112
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 35}
+        - {x: -10, y: 35}
+        - {x: -19, y: 31}
+        - {x: -19, y: -35}
+        - {x: 16, y: -35}
+        - {x: 19, y: -27}
+        - {x: 19, y: 19}
+        - {x: 15, y: 31}
+    - name: megaman7_megaman_sheet_113
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 0
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 36}
+        - {x: -18, y: 35}
+        - {x: -18, y: -36}
+        - {x: 12, y: -36}
+        - {x: 18, y: -22}
+        - {x: 18, y: 28}
+        - {x: 10, y: 36}
+    - name: megaman7_megaman_sheet_114
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 37
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: 20}
+        - {x: 11.5, y: 37}
+        - {x: -13.5, y: 37}
+        - {x: -18.5, y: 35}
+        - {x: -18.5, y: -37}
+        - {x: 3.5, y: -37}
+        - {x: 9.5, y: -33}
+        - {x: 15.5, y: -28}
+        - {x: 18.5, y: -18}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
