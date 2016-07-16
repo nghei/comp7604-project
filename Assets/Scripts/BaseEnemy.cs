@@ -112,6 +112,8 @@ public class BaseEnemy : MonoBehaviour
 
 		bool playerOnLeft = isPlayerOnLeft();
 
+		
+
 		if ((Mathf.Abs(transform.position.x - player.position.x) > 0.5) && ((!facingLeft && playerOnLeft) || (facingLeft && !playerOnLeft))) {
 			Flip ();
 		}
@@ -140,6 +142,8 @@ public class BaseEnemy : MonoBehaviour
 		float hSpeed = transform.localScale.x * speed;
 		body.velocity = new Vector2 (hSpeed, body.velocity.y);
 		anim.SetFloat ("MSpeed", Mathf.Abs (hSpeed));
+
+		anim.SetFloat ("vMSpeed", body.velocity.y);
 
 //		Debug.Log (transform.position.y + " vs " + player.position.y);
 
