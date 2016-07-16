@@ -17,25 +17,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &153160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 476604}
-  - 20: {fileID: 2097046}
-  - 92: {fileID: 9261460}
-  - 124: {fileID: 12418944}
-  - 81: {fileID: 8176522}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &196206
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,28 +72,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9, y: 2.45, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -15.337339, y: -0.10704422, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 438438}
-  - {fileID: 476604}
   - {fileID: 495426}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &476604
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153160}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 475012}
-  m_RootOrder: 1
 --- !u!4 &495426
 Transform:
   m_ObjectHideFlags: 1
@@ -125,41 +92,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 475012}
-  m_RootOrder: 2
---- !u!20 &2097046
-Camera:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153160}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
+  m_RootOrder: 1
 --- !u!50 &5038252
 Rigidbody2D:
   serializedVersion: 2
@@ -205,20 +138,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.2}
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.9}
---- !u!81 &8176522
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153160}
-  m_Enabled: 1
---- !u!92 &9261460
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153160}
-  m_Enabled: 1
 --- !u!95 &9518856
 Animator:
   serializedVersion: 3
@@ -256,8 +175,11 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294966783
-  jumpForce: 700
+  jumpForce: 1000
+  hp: 100
+  attackCd: 0.3
   attackTrigger: {fileID: 6143858}
+  sfbullet: {fileID: 5069934, guid: 8bf68718c85544dc2bf6740acc0005c1, type: 2}
 --- !u!114 &11498284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -270,13 +192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 20
---- !u!124 &12418944
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153160}
-  m_Enabled: 1
 --- !u!212 &21298088
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -301,7 +216,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1783731295
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf79ae5f272904609befd91c71704d96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
