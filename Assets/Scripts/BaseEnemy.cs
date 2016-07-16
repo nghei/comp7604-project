@@ -34,6 +34,8 @@ public class BaseEnemy : MonoBehaviour
 	Transform player;
 	BoxerControllerScript playerControl;
 
+	private Score score;				// get Score script
+
 	// Use this for initialization
 	protected void Start ()
 	{
@@ -45,6 +47,8 @@ public class BaseEnemy : MonoBehaviour
 		Vector3 sz = GetComponent<Renderer>().bounds.size;
 		myWidth = sz.x;
 		myHeight = sz.y;
+
+		score = GameObject.Find("Score").GetComponent<Score>();
 	}
 	
 	void OnCollisionEnter2D (Collision2D col)
@@ -175,6 +179,7 @@ public class BaseEnemy : MonoBehaviour
 
 	protected void DyingDone(){
 		Destroy(gameObject);
+		score.score += 100;
 	}
 
 	protected void Flip(){
