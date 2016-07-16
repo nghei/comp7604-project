@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Megaman : BaseEnemy {
 
-	public GameObject bullet;
+	public Rigidbody2D Bullet;
 	public GameObject Firepoint;
 
 	// Use this for initialization
@@ -19,6 +19,24 @@ public class Megaman : BaseEnemy {
 	// Update is called once per frame
 	void Update () {
 		base.Update ();
+		if (isInAttackRange ()) {
+			Debug.Log("Megaman attacks!");
+			Debug.Log(attackRange);
+			/*
+			Rigidbody2D bullet01 = Instantiate(Bullet, Firepoint.transform.position, Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
+
+			if (facingLeft){
+				Debug.Log("Bullet prepare to shoot face left!");
+				
+				bullet01.velocity = new Vector2(-8f, 0);
+			}else{
+				Debug.Log("Bullet prepare to shoot face right!");
+				bullet01.velocity = new Vector2(8f, 0);
+			}
+			*/
+
+		}	
+
 	}
 
 	void Damage(int damage){
@@ -29,22 +47,6 @@ public class Megaman : BaseEnemy {
 
 		base.FixedUpdate();
 
-		if (isInAttackRange ()) {
-			Debug.Log("Megaman attacks!");
-			Debug.Log(attackRange);
-			
-			if (facingLeft){
-				Debug.Log("Bullet prepare to shoot face left!");
-				Rigidbody2D bullet01 = Instantiate(bullet, Firepoint.transform.position, Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
-				bullet01.velocity = new Vector2(8f, 0);
-			}else{
-				Debug.Log("Bullet prepare to shoot face right!");
-				Rigidbody2D bullet01 = Instantiate(bullet, Firepoint.transform.position, Quaternion.Euler(new Vector3(0,0,180f))) as Rigidbody2D;
-				bullet01.velocity = new Vector2(-8f, 0);
-			}
-			
-
-		}	
 	}
 
 }
