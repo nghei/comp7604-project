@@ -22,7 +22,7 @@ public class Megaman : BaseEnemy {
 		if (isInAttackRange ()) {
 			Debug.Log("Megaman attacks!");
 			Debug.Log(attackRange);
-			/*
+			
 			Rigidbody2D bullet01 = Instantiate(Bullet, Firepoint.transform.position, Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
 
 			if (facingLeft){
@@ -33,7 +33,7 @@ public class Megaman : BaseEnemy {
 				Debug.Log("Bullet prepare to shoot face right!");
 				bullet01.velocity = new Vector2(8f, 0);
 			}
-			*/
+			
 
 		}	
 
