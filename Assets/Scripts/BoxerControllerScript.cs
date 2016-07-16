@@ -26,9 +26,11 @@ public class BoxerControllerScript : MonoBehaviour {
 
 	private bool attacking = false;
 
-	public float hp = 100;
+	public float maxHp = 100;
 	private float attackTimer = 0;
 	public float attackCd = 0.3f;
+
+	private float hp;
 
 	public Collider2D attackTrigger;
 
@@ -49,6 +51,8 @@ public class BoxerControllerScript : MonoBehaviour {
 		healthScale = healthBar.transform.localScale;
 		anim = GetComponent<Animator> ();
 		attackTrigger.enabled = false;
+		// Reset player.
+		ResetPlayer();
 	}
 	
 	// Update is called once per frame
@@ -176,6 +180,23 @@ public class BoxerControllerScript : MonoBehaviour {
 
 		// Set the scale of the health bar to be proportional to the player's health.
 		healthBar.transform.localScale = new Vector3(healthScale.x * hp * 0.01f, 1, 1);
+	}
+
+	public bool IsPlayerDead()
+	{
+		return hp <= 0;
+	}
+
+	public void KillPlayer()
+	{
+		hp = 0;
+	}
+
+	public void ResetPlayer()
+	{
+		hp = maxHp;
+		Debug.Log("HP: " + hp);
+		UpdateHealthBar();
 	}
 
 }
