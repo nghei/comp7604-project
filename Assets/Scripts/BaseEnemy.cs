@@ -13,32 +13,51 @@ public class BaseEnemy : MonoBehaviour
 	protected bool beingAttacked = false;
 	protected bool isDying = false;
 
+	protected float myWidth, myHeight;
+	protected float playerWidth, playerHeight;
+
 	protected Transform groundCheck;
 
 	protected Rigidbody2D body;
 	Animator anim;
 
 	public int speed = 1;
-	public int damage = 0;
-	public int hp = 1;
+	public float damage = 0;
+	public float hp = 1;
 	public float jumpForce = 200;
 	public float attackRange = 0.5f;
+	public float attackCd = 0.5f;
 
+	private float lastAttackTime = 0.0f;
 	private bool lastJumpFail;
 	
 	Transform player;
+	BoxerControllerScript playerControl;
+
+	private Score score;				// get Score script
 
 	// Use this for initialization
 	protected void Start ()
 	{
 		body = GetComponent<Rigidbody2D> ();
-		player = GameObject.FindGameObjectWithTag ("Player").transform;
+		// Don't find player here - Find in Update()
+		// player = GameObject.FindGameObjectWithTag ("Player").transform;
 		groundCheck = transform.Find("GroundCheck");
 		anim = GetComponent<Animator> ();
+		Vector3 sz = GetComponent<Renderer>().bounds.size;
+		myWidth = sz.x;
+		myHeight = sz.y;
+
+		score = GameObject.Find("Score").GetComponent<Score>();
 	}
 	
 	void OnCollisionEnter2D (Collision2D col)
 	{
+		if(hp <= 0){
+			isDying = true;
+			anim.SetBool("IsDying", isDying);
+		}
+
 		if (col.collider.tag != "Player")
 		{
 			isJumping = false;
@@ -57,19 +76,40 @@ public class BaseEnemy : MonoBehaviour
 		if (grounded) {
 			canJump = true;
 		}
-
+/*
 		if(hp <= 0){
 			isDying = true;
 			anim.SetBool("IsDying", isDying);
 		}
+*/
+	}
 
+	protected void FindPlayer()
+	{
+		// Finds the Player GameObject.
+		if (player != null)
+			return;
+
+		GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+		if (playerObject != null)
+		{
+			player = playerObject.transform;
+			Vector3 sz = playerObject.GetComponent<Renderer>().bounds.size;
+			playerWidth = sz.x;
+			playerHeight = sz.y;
+			playerControl = playerObject.GetComponent<BoxerControllerScript>();
+		}
 	}
 
 	protected bool isPlayerOnLeft() {
-		return transform.position.x > player.position.x;
+		return player != null ? transform.position.x > player.position.x : false;
 	}
 
 	protected void correctDirection() {
+
+		if (player == null)
+			return;
+
 		bool playerOnLeft = isPlayerOnLeft();
 
 		
@@ -80,17 +120,23 @@ public class BaseEnemy : MonoBehaviour
 	}
 
 	protected bool isSameGroundLevel() {
-		return Mathf.Abs (transform.position.y - player.position.y) < 0.5;
+		return player != null ? Mathf.Abs (transform.position.y - player.position.y) < 0.5 : false;
 	}
 
 	protected bool isInAttackRange() {
-		return Mathf.Abs (transform.position.x - player.position.x) < attackRange && isSameGroundLevel();
+		if (player == null)
+			return false;
+		float distance = Mathf.Abs(transform.position.x - player.position.x) - (myWidth + playerWidth) / 2;
+		return distance < attackRange && isSameGroundLevel();
 	}
 
 	protected void FixedUpdate ()
 	{
-		
+		FindPlayer();
+
 		correctDirection ();
+
+		HandleJumping();
 
 //		int dir = isPlayerOnLeft() ? -1 : 1;
 		float hSpeed = transform.localScale.x * speed;
@@ -101,18 +147,25 @@ public class BaseEnemy : MonoBehaviour
 
 //		Debug.Log (transform.position.y + " vs " + player.position.y);
 
-		if (!beingAttacked && !isDying && canJump && Mathf.Abs (transform.position.x - player.position.x) < 1 && transform.position.y + 0.5 < player.position.y) {
+		if (player != null && !beingAttacked && !isDying && canJump && Mathf.Abs (transform.position.x - player.position.x) < 1 && transform.position.y + 0.5 < player.position.y) {
 			canJump = false;
 			Jump ();
 		}
 
-		if (isInAttackRange ()) {
+		if (isInAttackRange() && Time.time >= lastAttackTime + attackCd) {
 			Attack ();
+			lastAttackTime = Time.time;
 		}		
+
+		if(hp <= 0){
+			isDying = true;
+			anim.SetBool("IsDying", isDying);
+		}
 	}
 
 	protected void Attack(){
 		anim.SetBool("MAttack",true);
+		playerControl.Damage(damage);
 
 	}
 
@@ -130,6 +183,7 @@ public class BaseEnemy : MonoBehaviour
 
 	protected void DyingDone(){
 		Destroy(gameObject);
+		score.score += 100;
 	}
 
 	protected void Flip(){
@@ -164,7 +218,7 @@ public class BaseEnemy : MonoBehaviour
 		}
 	}
 
-	protected void Damage(int damage){
+	public void Damage(float damage){
 		
 		Debug.Log("WTF Zombie is attacked");
 		hp -= damage;

@@ -26,11 +26,18 @@ public class BoxerControllerScript : MonoBehaviour {
 
 	private bool attacking = false;
 
+	public float maxHp = 100;
 	private float attackTimer = 0;
-	private float attackCd = 0.3f;
+	public float attackCd = 0.3f;
+
+	private float hp;
 
 	public Collider2D attackTrigger;
 
+	private SpriteRenderer healthBar;
+	private Vector3 healthScale;
+
+	public Rigidbody2D sfbullet;
 
 	void Awake(){
 	}
@@ -40,8 +47,12 @@ public class BoxerControllerScript : MonoBehaviour {
 		// Setting up references.
 		hero = GameObject.FindGameObjectWithTag("Player");
 		character = GetComponent<Rigidbody2D>();
+		healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
+		healthScale = healthBar.transform.localScale;
 		anim = GetComponent<Animator> ();
 		attackTrigger.enabled = false;
+		// Reset player.
+		ResetPlayer();
 	}
 	
 	// Update is called once per frame
@@ -90,7 +101,21 @@ public class BoxerControllerScript : MonoBehaviour {
 				attacking = true;
 				attackTimer = attackCd;
 
-				attackTrigger.enabled = true;
+				//attackTrigger.enabled = true;	
+				Rigidbody2D bulletInstance = Instantiate(sfbullet, transform.position, Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
+				if (facingLeft) {
+					bulletInstance.velocity = new Vector2 (-8f, 0);
+					Vector3 theScale = bulletInstance.transform.localScale;
+					theScale.x *= -1;
+					bulletInstance.transform.localScale = theScale;
+
+
+				} else {
+					bulletInstance.velocity = new Vector2(8f, 0);
+				}
+
+
+
 			}
 
 			if (attacking) {
@@ -103,6 +128,8 @@ public class BoxerControllerScript : MonoBehaviour {
 			}
 
 			anim.SetBool ("Attacking", attacking);
+
+
 		}
 	}
 	
@@ -110,6 +137,11 @@ public class BoxerControllerScript : MonoBehaviour {
 	{
 		Debug.Log(col.collider.tag);
 		isJumping = false;
+	}
+
+	public bool isFacingLeft()
+	{
+		return facingLeft;
 	}
 
 	void Flip(){
@@ -134,4 +166,37 @@ public class BoxerControllerScript : MonoBehaviour {
 			}
 		}
 	}
+
+	public void Damage(float damage)
+	{
+		hp -= damage;
+		UpdateHealthBar();
+	}
+
+	public void UpdateHealthBar ()
+	{
+		// Set the health bar's colour to proportion of the way between green and red based on the player's health.
+		healthBar.material.color = Color.Lerp(Color.green, Color.red, 1 - hp * 0.01f);
+
+		// Set the scale of the health bar to be proportional to the player's health.
+		healthBar.transform.localScale = new Vector3(healthScale.x * hp * 0.01f, 1, 1);
+	}
+
+	public bool IsPlayerDead()
+	{
+		return hp <= 0;
+	}
+
+	public void KillPlayer()
+	{
+		hp = 0;
+	}
+
+	public void ResetPlayer()
+	{
+		hp = maxHp;
+		Debug.Log("HP: " + hp);
+		UpdateHealthBar();
+	}
+
 }
