@@ -209,7 +209,7 @@ public class BaseEnemy : MonoBehaviour
 		}
 	}
 
-	protected void Damage(float damage){
+	public void Damage(float damage){
 		
 		Debug.Log("WTF Zombie is attacked");
 		hp -= damage;

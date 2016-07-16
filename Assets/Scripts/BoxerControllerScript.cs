@@ -35,6 +35,8 @@ public class BoxerControllerScript : MonoBehaviour {
 	private SpriteRenderer healthBar;
 	private Vector3 healthScale;
 
+	public Rigidbody2D sfbullet;
+
 	void Awake(){
 	}
 
@@ -95,7 +97,21 @@ public class BoxerControllerScript : MonoBehaviour {
 				attacking = true;
 				attackTimer = attackCd;
 
-				attackTrigger.enabled = true;
+				//attackTrigger.enabled = true;	
+				Rigidbody2D bulletInstance = Instantiate(sfbullet, transform.position, Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
+				if (facingLeft) {
+					bulletInstance.velocity = new Vector2 (-8f, 0);
+					Vector3 theScale = bulletInstance.transform.localScale;
+					theScale.x *= -1;
+					bulletInstance.transform.localScale = theScale;
+
+
+				} else {
+					bulletInstance.velocity = new Vector2(8f, 0);
+				}
+
+
+
 			}
 
 			if (attacking) {
@@ -108,6 +124,8 @@ public class BoxerControllerScript : MonoBehaviour {
 			}
 
 			anim.SetBool ("Attacking", attacking);
+
+
 		}
 	}
 	

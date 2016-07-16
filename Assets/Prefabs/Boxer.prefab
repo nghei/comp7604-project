@@ -179,6 +179,7 @@ MonoBehaviour:
   hp: 100
   attackCd: 0.3
   attackTrigger: {fileID: 6143858}
+  sfbullet: {fileID: 5069934, guid: 8bf68718c85544dc2bf6740acc0005c1, type: 2}
 --- !u!114 &11498284
 MonoBehaviour:
   m_ObjectHideFlags: 1
