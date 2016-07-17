@@ -26,11 +26,11 @@ public class BoxerControllerScript : MonoBehaviour {
 
 	private bool attacking = false;
 
-	public float maxHp = 100;
+	public int maxHp = 100;
 	private float attackTimer = 0;
 	public float attackCd = 0.3f;
 
-	private float hp;
+	private int hp;
 
 	public Collider2D attackTrigger;
 
@@ -57,7 +57,11 @@ public class BoxerControllerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+
+		if (IsPlayerDead ())
+			return;
+		
+		grounded = Physics2D.Linecast(transform.position, groundCheck.position, (1 << LayerMask.NameToLayer("Ground")) | (1 << LayerMask.NameToLayer("Enemies")));
 		anim.SetBool ("Ground", grounded);
 
 		anim.SetFloat ("vSpeed", character.velocity.y);
@@ -84,6 +88,10 @@ public class BoxerControllerScript : MonoBehaviour {
 
 	void Update()
 	{
+
+		if (IsPlayerDead ())
+			return;
+
 		HandleJumping();
 		
 		// should not get input directly, should do it in input manager
@@ -167,9 +175,11 @@ public class BoxerControllerScript : MonoBehaviour {
 		}
 	}
 
-	public void Damage(float damage)
+	public void Damage(int damage)
 	{
 		hp -= damage;
+		hp = hp < 0 ? 0 : hp;
+		Debug.Log ("HP: " + hp + " Damage: " + damage);
 		UpdateHealthBar();
 	}
 
@@ -196,10 +206,12 @@ public class BoxerControllerScript : MonoBehaviour {
 	{
 		hp = maxHp;
 		Debug.Log("HP: " + hp);
+		hero.layer = LayerMask.NameToLayer("Player");
+		character.velocity = new Vector2 (0, 0);
 		UpdateHealthBar();
 	}
 
-	public float getHP() {
+	public int getHP() {
 		return hp;
 	}
 
