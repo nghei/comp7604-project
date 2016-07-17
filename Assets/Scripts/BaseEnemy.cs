@@ -29,8 +29,8 @@ public class BaseEnemy : MonoBehaviour
 	public float attackRange = 0.5f;
 	public float attackCd = 0.5f;
 
-	private float lastAttackTime = 0.0f;
-	private bool lastJumpFail;
+	protected float lastAttackTime = 0.0f;
+	protected bool lastJumpFail;
 	
 	Transform player;
 	BoxerControllerScript playerControl;
@@ -77,6 +77,15 @@ public class BaseEnemy : MonoBehaviour
 		if (grounded) {
 			canJump = true;
 		}
+
+
+		// Debug.Log("isInAttackRange: ");
+		// Debug.Log(isInAttackRange());
+
+		if (isInAttackRange() && Time.time >= lastAttackTime + attackCd) {
+			Attack ();
+			lastAttackTime = Time.time;
+		}		
 /*
 		if(hp <= 0){
 			isDying = true;
@@ -128,7 +137,7 @@ public class BaseEnemy : MonoBehaviour
 		if (player == null)
 			return false;
 		float distance = Mathf.Abs(transform.position.x - player.position.x) - (myWidth + playerWidth) / 2;
-		Debug.Log("Distnce between BaseEnemy and Player: "+distance+" attackRange: "+attackRange);
+		// Debug.Log("Distnce between BaseEnemy and Player: "+distance+" attackRange: "+attackRange);
 		return distance < attackRange && isSameGroundLevel();
 	}
 
@@ -137,7 +146,7 @@ public class BaseEnemy : MonoBehaviour
 		
 		FindPlayer();
 
-		correctDirection ();
+		
 
 		HandleJumping();
 
@@ -147,6 +156,7 @@ public class BaseEnemy : MonoBehaviour
 			hSpeed = 0;
 		}else{
 			hSpeed = transform.localScale.x * speed;
+			correctDirection ();
 		}
 		
 		body.velocity = new Vector2 (hSpeed, body.velocity.y);
@@ -158,8 +168,8 @@ public class BaseEnemy : MonoBehaviour
 	
 		bool shouldJump = (Mathf.Abs (transform.position.x - player.position.x) < 5 && transform.position.y + 0.5 < player.position.y);
 
-		Debug.Log("BaseEnemy position x: "+ transform.position.x +" Player Position x: " +player.position.x + "BaseEnemy position y: "+ transform.position.y +" Player Position y: " +player.position.y);
-		Debug.Log("shouldJump?: "+shouldJump);
+		// Debug.Log("BaseEnemy position x: "+ transform.position.x +" Player Position x: " +player.position.x + "BaseEnemy position y: "+ transform.position.y +" Player Position y: " +player.position.y);
+		// Debug.Log("shouldJump?: " + shouldJump);
 
 		if (player != null && !beingAttacked && !isDying && canJump && shouldJump) {
 			canJump = false;
@@ -167,13 +177,6 @@ public class BaseEnemy : MonoBehaviour
 			Jump ();
 		}
 
-		Debug.Log("isInAttackRange: ");
-		Debug.Log(isInAttackRange());
-
-		if (isInAttackRange() && Time.time >= lastAttackTime + attackCd) {
-			Attack ();
-			lastAttackTime = Time.time;
-		}		
 
 		if(hp <= 0){
 			isDying = true;
@@ -181,10 +184,11 @@ public class BaseEnemy : MonoBehaviour
 		}
 	}
 
-	protected void Attack(){
+	protected virtual void Attack(){
 		isAttacking = true;
 		anim.SetBool("MAttack",isAttacking);
 		playerControl.Damage(damage);
+		Debug.Log("BaseEnemy Attacks!");
 
 	}
 
@@ -239,13 +243,12 @@ public class BaseEnemy : MonoBehaviour
 	}
 
 	public void Damage(float damage){
-		
-		Debug.Log("WTF Zombie is attacked");
+	
 		hp -= damage;
 		beingAttacked = true;
 		anim.SetBool ("BeingAttacked", beingAttacked);	
-		Debug.Log ("BaseEnemyhp: " + hp);
-		Debug.Log ("damage: " + damage);
+		//Debug.Log ("BaseEnemyhp: " + hp);
+		//Debug.Log ("damage: " + damage);
 	}
 	
 }

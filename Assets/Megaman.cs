@@ -14,6 +14,7 @@ public class Megaman : BaseEnemy {
 		damage = 1;
 		hp = 500;
 		attackRange = 10.0f;
+		attackCd = 1.0f;
 		// Test for being attacked
 	}
 
@@ -21,27 +22,6 @@ public class Megaman : BaseEnemy {
 	// Update is called once per frame
 	void Update () {
 		base.Update ();
-		Debug.Log("Attackrange");
-		Debug.Log(attackRange);
-		
-		if (base.isInAttackRange ()) {
-			Debug.Log("Megaman attacks!");
-			Debug.Log(attackRange);
-			
-			Rigidbody2D bullet01 = Instantiate(Bullet, Firepoint.transform.position, Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
-
-			if (facingLeft){
-				Debug.Log("Bullet prepare to shoot face left!");
-				
-				bullet01.velocity = new Vector2(-8f, 0);
-			}else{
-				Debug.Log("Bullet prepare to shoot face right!");
-				bullet01.velocity = new Vector2(8f, 0);
-			}
-			
-
-		}	
-
 	}
 
 	void Damage(int damage){
@@ -53,4 +33,27 @@ public class Megaman : BaseEnemy {
 
 	}
 
+	protected override void Attack(){
+
+ 		Debug.Log("Megaman attacks!");
+
+ 		base.Attack();
+
+		
+		Debug.Log(attackRange);
+		
+		Rigidbody2D bullet01 = Instantiate(Bullet, Firepoint.transform.position, Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
+
+		if (facingLeft){
+			Debug.Log("Bullet prepare to shoot face left!");
+			
+			bullet01.velocity = new Vector2(-8f, 0);
+		}else{
+			Debug.Log("Bullet prepare to shoot face right!");
+			bullet01.velocity = new Vector2(8f, 0);
+		}
+
+
+
+	}
 }

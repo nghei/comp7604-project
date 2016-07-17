@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3178b05895f24ed1b5175fcdb5a27df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
+  explosion: {fileID: 140330, guid: 1c94fd881e68d45df94c2207184d87b7, type: 2}
   dmg: 5
 --- !u!212 &21293680
 SpriteRenderer:
