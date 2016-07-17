@@ -2787,7 +2787,7 @@ GUIText:
   m_GameObject: {fileID: 1868248112}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Score
+  m_Text: HP
   m_Anchor: 2
   m_Alignment: 1
   m_PixelOffset: {x: -180, y: 0}
