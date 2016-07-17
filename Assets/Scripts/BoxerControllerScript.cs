@@ -199,4 +199,8 @@ public class BoxerControllerScript : MonoBehaviour {
 		UpdateHealthBar();
 	}
 
+	public float getHP() {
+		return hp;
+	}
+
 }
