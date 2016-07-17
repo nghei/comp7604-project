@@ -165,13 +165,14 @@ public class BaseEnemy : MonoBehaviour
 
 	protected void Attack(){
 		anim.SetBool("MAttack",true);
-		playerControl.Damage(damage);
-
 	}
 
 	//this is used when event is triggered in ZombieAttack animation
 	protected void AttackDone(){
 		anim.SetBool ("MAttack", false);
+		if (isInAttackRange ()) {
+			playerControl.Damage(damage);
+		}
 	}
 
 	//this is used when event is triggered in ZombieHit animation
