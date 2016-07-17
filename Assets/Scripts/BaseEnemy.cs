@@ -13,6 +13,7 @@ public class BaseEnemy : MonoBehaviour
 	protected bool facingLeft = false;
 	protected bool beingAttacked = false;
 	protected bool isDying = false;
+	protected bool isAttacking = false;
 
 	protected float myWidth, myHeight;
 	protected float playerWidth, playerHeight;
@@ -32,7 +33,7 @@ public class BaseEnemy : MonoBehaviour
 	public float attackRange = 0.5f;
 	public float attackCd = 0.5f;
 
-	private float lastAttackTime = 0.0f;
+	protected float lastAttackTime = 0.0f;
 	private bool lastJumpDecision = false;
 	
 	Transform player;
@@ -80,6 +81,15 @@ public class BaseEnemy : MonoBehaviour
 		if (grounded) {
 			canJump = true;
 		}
+
+
+		// Debug.Log("isInAttackRange: ");
+		// Debug.Log(isInAttackRange());
+
+		if (isInAttackRange() && Time.time >= lastAttackTime + attackCd) {
+			Attack ();
+			lastAttackTime = Time.time;
+		}		
 /*
 		if(hp <= 0){
 			isDying = true;
@@ -131,6 +141,7 @@ public class BaseEnemy : MonoBehaviour
 		if (player == null)
 			return false;
 		float distance = Mathf.Abs(transform.position.x - player.position.x) - (myWidth + playerWidth) / 2;
+		// Debug.Log("Distnce between BaseEnemy and Player: "+distance+" attackRange: "+attackRange);
 		return distance < attackRange && isSameGroundLevel();
 	}
 
@@ -158,30 +169,40 @@ public class BaseEnemy : MonoBehaviour
 
 	protected void FixedUpdate ()
 	{
+		
 		FindPlayer();
 
-		correctDirection ();
+		
 
 		HandleJumping();
 
 //		int dir = isPlayerOnLeft() ? -1 : 1;
-		float hSpeed = transform.localScale.x * speed;
+		float hSpeed;
+		if(beingAttacked || isAttacking || isDying){
+			hSpeed = 0;
+		}else{
+			hSpeed = transform.localScale.x * speed;
+			correctDirection ();
+		}
+		
 		body.velocity = new Vector2 (hSpeed, body.velocity.y);
 		anim.SetFloat ("MSpeed", Mathf.Abs (hSpeed));
 
 		anim.SetFloat ("vMSpeed", body.velocity.y);
 
 //		Debug.Log (transform.position.y + " vs " + player.position.y);
+	
+		bool shouldJump = (Mathf.Abs (transform.position.x - player.position.x) < 5 && transform.position.y + 0.5 < player.position.y);
+
+		// Debug.Log("BaseEnemy position x: "+ transform.position.x +" Player Position x: " +player.position.x + "BaseEnemy position y: "+ transform.position.y +" Player Position y: " +player.position.y);
+		// Debug.Log("shouldJump?: " + shouldJump);
 
 		if (player != null && !beingAttacked && !isDying && canJump && ShouldJump()) {
 			canJump = false;
+			Debug.Log("BaseEnemy Jump!");
 			Jump ();
 		}
 
-		if (isInAttackRange() && Time.time >= lastAttackTime + attackCd) {
-			Attack ();
-			lastAttackTime = Time.time;
-		}		
 
 		if(hp <= 0){
 			isDying = true;
@@ -189,13 +210,18 @@ public class BaseEnemy : MonoBehaviour
 		}
 	}
 
-	protected void Attack(){
-		anim.SetBool("MAttack",true);
+	protected virtual void Attack(){
+		isAttacking = true;
+		anim.SetBool("MAttack",isAttacking);
+		playerControl.Damage(damage);
+		Debug.Log("BaseEnemy Attacks!");
+
 	}
 
 	//this is used when event is triggered in ZombieAttack animation
 	protected void AttackDone(){
-		anim.SetBool ("MAttack", false);
+		isAttacking = false;
+		anim.SetBool ("MAttack", isAttacking	);
 		Debug.Log ("isInAttackRange? " + isInAttackRange());
 		if (isInAttackRange ()) {
 			playerControl.Damage(damage);
@@ -250,13 +276,12 @@ public class BaseEnemy : MonoBehaviour
 	}
 
 	public void Damage(float damage){
-		
-		Debug.Log("WTF Zombie is attacked");
+	
 		hp -= damage;
 		beingAttacked = true;
 		anim.SetBool ("BeingAttacked", beingAttacked);	
-		Debug.Log ("BaseEnemyhp: " + hp);
-		Debug.Log ("damage: " + damage);
+		//Debug.Log ("BaseEnemyhp: " + hp);
+		//Debug.Log ("damage: " + damage);
 	}
 	
 }
