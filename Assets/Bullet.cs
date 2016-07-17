@@ -6,6 +6,8 @@ public class Bullet : MonoBehaviour {
 	
 	bool facingLeft;
 	public GameObject explosion;
+	BoxerControllerScript playerControl;
+	public int dmg = 5;
 
 
 	// Use this for initialization
@@ -30,7 +32,7 @@ public class Bullet : MonoBehaviour {
 		{
 			// ... find the Enemy script and call the Hurt function. ... NOT YET IMPLEMEENTED
 			Debug.Log("Prepared to exploded");
-
+			playerControl.Damage(damage);
 			// Call the explosion instantiation.
 			OnExplode();
 
