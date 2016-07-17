@@ -22,7 +22,7 @@ public class BaseEnemy : MonoBehaviour
 	Animator anim;
 
 	public int speed = 1;
-	public float damage = 0;
+	public int damage = 0;
 	public float hp = 1;
 	public float jumpForce = 200;
 	public float attackRange = 0.5f;
@@ -170,6 +170,7 @@ public class BaseEnemy : MonoBehaviour
 	//this is used when event is triggered in ZombieAttack animation
 	protected void AttackDone(){
 		anim.SetBool ("MAttack", false);
+		Debug.Log ("isInAttackRange? " + isInAttackRange());
 		if (isInAttackRange ()) {
 			playerControl.Damage(damage);
 		}
