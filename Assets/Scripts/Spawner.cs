@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour
 	public float spawnTime = 5f;		// The amount of time between each spawn.
 	public float spawnDelay = 3f;		// The amount of time before spawning starts.
 	public GameObject[] enemies;		// Array of enemy prefabs.
+	public GameObject healthBar;
 
 	public int maxInstances = 10;		// Default maximum number of instances on the map.
 
@@ -59,6 +60,10 @@ public class Spawner : MonoBehaviour
 		{
 			enemyInstances[inactiveIndex].transform.position = transform.position;
 			enemyInstances[inactiveIndex].SetActive(true);
+			GameObject enemyHealthBarObj = Instantiate (healthBar, transform.position, transform.rotation) as GameObject;
+			EnemyHealthBar enemyHealthBarCtrl = enemyHealthBarObj.GetComponent<EnemyHealthBar> ();
+			enemyHealthBarCtrl.enemy = enemyInstances [inactiveIndex].transform;
+			enemyHealthBarCtrl.enemyControl = enemyInstances [inactiveIndex].GetComponent<BaseEnemy> ();
 		}
 
 		/*
