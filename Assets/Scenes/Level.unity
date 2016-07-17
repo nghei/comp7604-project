@@ -802,7 +802,7 @@ Prefab:
       objectReference: {fileID: 162894, guid: 837123843d6472c48a70c364ce652529, type: 2}
     - target: {fileID: 11400000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: spawnTime
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: spawnDelay
@@ -2335,7 +2335,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: spawnTime
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: m_IsActive
@@ -2685,7 +2685,7 @@ Prefab:
       objectReference: {fileID: 162894, guid: 837123843d6472c48a70c364ce652529, type: 2}
     - target: {fileID: 11400000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: spawnTime
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: spawnDelay
