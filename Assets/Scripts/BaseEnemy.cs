@@ -25,7 +25,8 @@ public class BaseEnemy : MonoBehaviour
 
 	public int speed = 1;
 	public int damage = 0;
-	public float hp = 1;
+	public int hp = 1;
+	public int maxHp = 1;
 	public float jumpProbMultiplier = 2.0f;
 	public float jumpSigma = 10;
 	public float jumpCd = 0.1f;
@@ -137,7 +138,7 @@ public class BaseEnemy : MonoBehaviour
 		float enemyGroundLevel = transform.position.y - myHeight / 2;
 		float playerGroundLevel = player.position.y - playerHeight / 2;
 
-		return enemyGroundLevel < playerGroundLevel && isSameGroundLevel ();
+		return enemyGroundLevel < playerGroundLevel && !isSameGroundLevel ();
 	}
 
 	protected bool isSameGroundLevel() {
@@ -284,9 +285,10 @@ public class BaseEnemy : MonoBehaviour
 		}
 	}
 
-	public void Damage(float damage){
+	public void Damage(int damage){
 	
 		hp -= damage;
+		hp = hp < 0 ? 0 : hp;
 		beingAttacked = true;
 		anim.SetBool ("BeingAttacked", beingAttacked);	
 		//Debug.Log ("BaseEnemyhp: " + hp);

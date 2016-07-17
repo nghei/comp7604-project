@@ -64,6 +64,7 @@ public class Spawner : MonoBehaviour
 			EnemyHealthBar enemyHealthBarCtrl = enemyHealthBarObj.GetComponent<EnemyHealthBar> ();
 			enemyHealthBarCtrl.enemy = enemyInstances [inactiveIndex].transform;
 			enemyHealthBarCtrl.enemyControl = enemyInstances [inactiveIndex].GetComponent<BaseEnemy> ();
+			enemyHealthBarCtrl.healthBarObj = enemyHealthBarObj;
 		}
 
 		/*
