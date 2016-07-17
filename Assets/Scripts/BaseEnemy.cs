@@ -25,7 +25,8 @@ public class BaseEnemy : MonoBehaviour
 
 	public int speed = 1;
 	public int damage = 0;
-	public float hp = 1;
+	public int hp = 1;
+	public int maxHp = 1;
 	public float jumpProbMultiplier = 2.0f;
 	public float jumpSigma = 10;
 	public float jumpCd = 0.1f;
@@ -133,8 +134,18 @@ public class BaseEnemy : MonoBehaviour
 		}
 	}
 
+	protected bool isBelowPlayer() {
+		float enemyGroundLevel = transform.position.y - myHeight / 2;
+		float playerGroundLevel = player.position.y - playerHeight / 2;
+
+		return enemyGroundLevel < playerGroundLevel && !isSameGroundLevel ();
+	}
+
 	protected bool isSameGroundLevel() {
-		return player != null ? Mathf.Abs (transform.position.y - player.position.y) < 0.5 : false;
+		float enemyGroundLevel = transform.position.y - myHeight / 2;
+		float playerGroundLevel = player.position.y - playerHeight / 2;
+
+		return Mathf.Abs(enemyGroundLevel - playerGroundLevel) < 0.3f;
 	}
 
 	protected bool isInAttackRange() {
@@ -151,8 +162,8 @@ public class BaseEnemy : MonoBehaviour
 		
 		if (isJumping || Time.time < jumpDecisionTime + jumpCd)
 			return lastJumpDecision;
-
-		if (transform.position.y >= player.position.y)
+		
+		if (!isBelowPlayer())
 			return false;
 
 		float prob = jumpProbMultiplier / Mathf.Sqrt(2 * Mathf.PI * jumpSigma * jumpSigma) * Mathf.Exp(-0.5f * distance * distance / (jumpSigma * jumpSigma));
@@ -213,7 +224,6 @@ public class BaseEnemy : MonoBehaviour
 	protected virtual void Attack(){
 		isAttacking = true;
 		anim.SetBool("MAttack",isAttacking);
-		playerControl.Damage(damage);
 		Debug.Log("BaseEnemy Attacks!");
 
 	}
@@ -275,9 +285,10 @@ public class BaseEnemy : MonoBehaviour
 		}
 	}
 
-	public void Damage(float damage){
+	public void Damage(int damage){
 	
 		hp -= damage;
+		hp = hp < 0 ? 0 : hp;
 		beingAttacked = true;
 		anim.SetBool ("BeingAttacked", beingAttacked);	
 		//Debug.Log ("BaseEnemyhp: " + hp);

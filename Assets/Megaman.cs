@@ -13,6 +13,7 @@ public class Megaman : BaseEnemy {
 		speed = 1;
 		damage = 1;
 		hp = 500;
+		maxHp = 500;
 		attackRange = 10.0f;
 		attackCd = 1.0f;
 		// Test for being attacked
