@@ -6,10 +6,17 @@ public class Bullet : MonoBehaviour {
 	
 	bool facingLeft;
 	public GameObject explosion;
+	BoxerControllerScript playerControl;
+	public int dmg = 500;
 
 
 	// Use this for initialization
 	void Start () {
+		GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+		if (playerObject != null)
+		{
+			playerControl = playerObject.GetComponent<BoxerControllerScript>();
+		}
 		
 
 	}
@@ -26,11 +33,11 @@ public class Bullet : MonoBehaviour {
 		Debug.Log("Collided");
 
 		// If it hits an enemy...
-		if(col.tag == "Player" || col.tag == "Enemy" )
+		if(col.tag == "Player" )
 		{
 			// ... find the Enemy script and call the Hurt function. ... NOT YET IMPLEMEENTED
 			Debug.Log("Prepared to exploded");
-
+			playerControl.Damage(dmg);
 			// Call the explosion instantiation.
 			OnExplode();
 
