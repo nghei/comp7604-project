@@ -9,6 +9,7 @@ public class BaseEnemy : MonoBehaviour
 	protected bool canJump = false;
 	protected bool isJumping = false;
 	protected float jumpTime = 0.0f;
+	protected float jumpDecisionTime = 0.0f;
 	protected bool facingLeft = false;
 	protected bool beingAttacked = false;
 	protected bool isDying = false;
@@ -24,12 +25,15 @@ public class BaseEnemy : MonoBehaviour
 	public int speed = 1;
 	public int damage = 0;
 	public float hp = 1;
+	public float jumpProbMultiplier = 2.0f;
+	public float jumpSigma = 10;
+	public float jumpCd = 0.1f;
 	public float jumpForce = 200;
 	public float attackRange = 0.5f;
 	public float attackCd = 0.5f;
 
 	private float lastAttackTime = 0.0f;
-	private bool lastJumpFail;
+	private bool lastJumpDecision = false;
 	
 	Transform player;
 	BoxerControllerScript playerControl;
@@ -130,6 +134,28 @@ public class BaseEnemy : MonoBehaviour
 		return distance < attackRange && isSameGroundLevel();
 	}
 
+	protected bool ShouldJump()
+	{
+		float distance = transform.position.x - player.position.x;
+		
+		if (isJumping || Time.time < jumpDecisionTime + jumpCd)
+			return lastJumpDecision;
+
+		if (transform.position.y >= player.position.y)
+			return false;
+
+		float prob = jumpProbMultiplier / Mathf.Sqrt(2 * Mathf.PI * jumpSigma * jumpSigma) * Mathf.Exp(-0.5f * distance * distance / (jumpSigma * jumpSigma));
+		jumpDecisionTime = Time.time;
+
+		Debug.Log("Prob: " + prob);
+
+		lastJumpDecision = Random.Range(0.0f, 1.0f) <= prob;
+
+		Debug.Log("lastJumpDecision: " + lastJumpDecision);
+
+		return lastJumpDecision;
+	}
+
 	protected void FixedUpdate ()
 	{
 		FindPlayer();
@@ -147,7 +173,7 @@ public class BaseEnemy : MonoBehaviour
 
 //		Debug.Log (transform.position.y + " vs " + player.position.y);
 
-		if (player != null && !beingAttacked && !isDying && canJump && Mathf.Abs (transform.position.x - player.position.x) < 1 && transform.position.y + 0.5 < player.position.y) {
+		if (player != null && !beingAttacked && !isDying && canJump && ShouldJump()) {
 			canJump = false;
 			Jump ();
 		}
@@ -197,6 +223,9 @@ public class BaseEnemy : MonoBehaviour
 
 	protected void Jump ()
 	{
+		if (isJumping || Time.time < jumpTime + jumpCd)
+			return;
+
 		body.AddForce (new Vector2 (0, jumpForce));
 		canJump = false;
 		jumpTime = Time.time;
@@ -210,7 +239,7 @@ public class BaseEnemy : MonoBehaviour
 		if (!isJumping || GetComponent<Rigidbody2D>().velocity.y < 0)
 		{
 			// If BaseEnemy was jumping, move it back to Enemies layer
-			if (Time.time > jumpTime + 0.1f)
+			if (Time.time > jumpTime + jumpCd)
 			{
 				if (transform.gameObject.layer != LayerMask.NameToLayer("Enemies"))
 				{
