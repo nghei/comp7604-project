@@ -169,15 +169,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   damage: 0
-  hp: 1
-  maxHp: 1
-  killScore: 100
+  hp: 150
+  maxHp: 150
+  killScore: 500
   jumpProbMultiplier: 2
   jumpSigma: 10
   jumpCd: 0.1
   jumpForce: 1200
-  attackRange: 5
-  attackCd: 0.5
+  attackRange: 6
+  attackCd: 0.3
   Bullet: {fileID: 5014390, guid: 71c73f30bbdc24eb3b7b65ab3c6db75b, type: 2}
   Firepoint: {fileID: 127302}
   explosion: {fileID: 0}

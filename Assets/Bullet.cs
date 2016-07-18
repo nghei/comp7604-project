@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour {
 		{
 			playerControl = playerObject.GetComponent<BoxerControllerScript>();
 		}
-		
+		Destroy (gameObject, 3);
 
 	}
 

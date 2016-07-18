@@ -10,13 +10,6 @@ public class Megaman : BaseEnemy {
 	// Use this for initialization
 	void Start () {
 		base.Start ();
-		speed = 1;
-		damage = 1;
-		hp = 500;
-		maxHp = 500;
-		attackRange = 10.0f;
-		attackCd = 1.0f;
-		killScore = 500;
 		// Test for being attacked
 	}
 
