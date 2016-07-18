@@ -27,9 +27,10 @@ public class BaseEnemy : MonoBehaviour
 	public int damage = 0;
 	public int hp = 1;
 	public int maxHp = 1;
+	public int killScore = 100;
 	public float jumpProbMultiplier = 2.0f;
 	public float jumpSigma = 10;
-	public float jumpCd = 0.1f;
+	public float jumpCd = 1f;
 	public float jumpForce = 200;
 	public float attackRange = 0.5f;
 	public float attackCd = 0.5f;
@@ -169,7 +170,7 @@ public class BaseEnemy : MonoBehaviour
 		float prob = jumpProbMultiplier / Mathf.Sqrt(2 * Mathf.PI * jumpSigma * jumpSigma) * Mathf.Exp(-0.5f * distance * distance / (jumpSigma * jumpSigma));
 		jumpDecisionTime = Time.time;
 
-		Debug.Log("Prob: " + prob);
+//		Debug.Log("Prob: " + prob);
 
 		lastJumpDecision = Random.Range(0.0f, 1.0f) <= prob;
 
@@ -247,7 +248,7 @@ public class BaseEnemy : MonoBehaviour
 
 	protected void DyingDone(){
 		Destroy(gameObject);
-		score.score += 100;
+		score.score += killScore;
 	}
 
 	protected void Flip(){

@@ -124,10 +124,12 @@ MonoBehaviour:
   speed: 1
   damage: 10
   hp: 50
+  maxHp: 50
+  killScore: 100
   jumpProbMultiplier: 2
   jumpSigma: 10
   jumpCd: 0.1
-  jumpForce: 1000
+  jumpForce: 1200
   attackRange: 0.5
   attackCd: 0.5
 --- !u!212 &21229386

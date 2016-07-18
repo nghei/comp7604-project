@@ -16,6 +16,7 @@ public class Megaman : BaseEnemy {
 		maxHp = 500;
 		attackRange = 10.0f;
 		attackCd = 1.0f;
+		killScore = 500;
 		// Test for being attacked
 	}
 
