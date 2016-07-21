@@ -104,7 +104,7 @@ public class BoxerControllerScript : MonoBehaviour {
 				hero.layer = LayerMask.NameToLayer("PassThru");
 			}
 
-			if (Input.GetKeyDown(KeyCode.DownArrow) && !attacking) {
+			if (Input.GetKeyDown(KeyCode.Space) && !attacking) {
 				Debug.Log ("attack!");
 				attacking = true;
 				attackTimer = attackCd;
