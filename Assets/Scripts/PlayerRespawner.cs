@@ -13,6 +13,9 @@ public class PlayerRespawner : MonoBehaviour
 
 	private bool isRespawnInProgress = false;
 
+	public int respawnLimit = 3;
+	private int spawnCount = 0;
+
 	void Start ()
 	{
 		// Find reference to Player Control script.
@@ -42,12 +45,19 @@ public class PlayerRespawner : MonoBehaviour
 
 	private IEnumerator Respawn()
 	{
+		if (spawnCount >= respawnLimit)
+			yield break;
+		spawnCount++;
 		yield return new WaitForSeconds(respawnTime);
 		Debug.Log("Calling ResetPlayer");
 		playerControl.ResetPlayer();
 		Debug.Log("Moving Player to the spawn location");
 		playerObject.transform.position = transform.position;
 		healthBarObject.SetActive(true);
+	}
+
+	public int lives() {
+		return respawnLimit - spawnCount;
 	}
 }
 
