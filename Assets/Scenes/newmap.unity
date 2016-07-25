@@ -1167,6 +1167,10 @@ Prefab:
       propertyPath: enemies.Array.data[4]
       value: 
       objectReference: {fileID: 162894, guid: 837123843d6472c48a70c364ce652529, type: 2}
+    - target: {fileID: 100000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
   m_IsPrefabParent: 0
@@ -3123,7 +3127,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: enemies.Array.data[2]
@@ -3538,7 +3542,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
       propertyPath: m_LocalScale.x

@@ -13,9 +13,9 @@ GameObject:
   - 114: {fileID: 11487140}
   - 61: {fileID: 6117216}
   - 114: {fileID: 11481014}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: streetfighter_bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
