@@ -31,6 +31,19 @@ public class Bullet : MonoBehaviour {
 	
 	void OnTriggerEnter2D (Collider2D col) {
 		Debug.Log("Collided");
+		Debug.Log(col);
+		Debug.Log(col.tag);
+
+		if(col.tag == "Bullet" )
+		{
+			// ... find the Enemy script and call the Hurt function. ... NOT YET IMPLEMEENTED
+			Debug.Log("Hit bullet!");
+			// Call the explosion instantiation.
+			OnExplode();
+
+			// Destroy the rocket.
+			Destroy (gameObject);
+		}
 
 		// If it hits an enemy...
 		if(col.tag == "Player" )
