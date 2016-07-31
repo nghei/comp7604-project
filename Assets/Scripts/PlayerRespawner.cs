@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerRespawner : MonoBehaviour
@@ -12,6 +13,9 @@ public class PlayerRespawner : MonoBehaviour
 	public GameObject healthBarObject;
 
 	private bool isRespawnInProgress = false;
+
+	public int respawnLimit = 3;
+	private int spawnCount = 0;
 
 	void Start ()
 	{
@@ -42,12 +46,21 @@ public class PlayerRespawner : MonoBehaviour
 
 	private IEnumerator Respawn()
 	{
+		if (spawnCount >= respawnLimit) {
+			SceneManager.LoadScene ("Scenes/GameOver");
+			yield break;
+		}
+		spawnCount++;
 		yield return new WaitForSeconds(respawnTime);
 		Debug.Log("Calling ResetPlayer");
 		playerControl.ResetPlayer();
 		Debug.Log("Moving Player to the spawn location");
 		playerObject.transform.position = transform.position;
 		healthBarObject.SetActive(true);
+	}
+
+	public int lives() {
+		return respawnLimit - spawnCount;
 	}
 }
 

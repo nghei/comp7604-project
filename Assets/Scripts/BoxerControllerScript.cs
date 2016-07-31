@@ -194,6 +194,11 @@ public class BoxerControllerScript : MonoBehaviour {
 
 	public bool IsPlayerDead()
 	{
+		if (hp <= 0) {
+			Color tmp = hero.GetComponent<SpriteRenderer> ().color;
+			tmp.a = 0f;
+			hero.GetComponent<SpriteRenderer> ().color = tmp;
+		}
 		return hp <= 0;
 	}
 
@@ -209,6 +214,9 @@ public class BoxerControllerScript : MonoBehaviour {
 		hero.layer = LayerMask.NameToLayer("Player");
 		character.velocity = new Vector2 (0, 0);
 		UpdateHealthBar();
+		Color tmp = hero.GetComponent<SpriteRenderer> ().color;
+		tmp.a = 255f;
+		hero.GetComponent<SpriteRenderer> ().color = tmp;
 	}
 
 	public int getHP() {
