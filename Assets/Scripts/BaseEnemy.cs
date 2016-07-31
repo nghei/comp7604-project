@@ -248,7 +248,7 @@ public class BaseEnemy : MonoBehaviour
 
 	protected void DyingDone(){
 		Destroy(gameObject);
-		score.score += killScore;
+		Score.score += killScore;
 	}
 
 	protected void Flip(){

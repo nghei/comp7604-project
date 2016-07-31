@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Score : MonoBehaviour
 {
-	public int score = 0;					// The player's score.
+	public static int score = 0;					// The player's score.
 
 
 	private BoxerControllerScript playerControl;	// get boxer controller script
@@ -14,6 +14,7 @@ public class Score : MonoBehaviour
 	{
 		// Setting up the reference.
 		playerControl = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxerControllerScript>();
+		Score.score = 0;
 	}
 
 

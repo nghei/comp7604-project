@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerRespawner : MonoBehaviour
@@ -45,8 +46,10 @@ public class PlayerRespawner : MonoBehaviour
 
 	private IEnumerator Respawn()
 	{
-		if (spawnCount >= respawnLimit)
+		if (spawnCount >= respawnLimit) {
+			SceneManager.LoadScene ("Scenes/GameOver");
 			yield break;
+		}
 		spawnCount++;
 		yield return new WaitForSeconds(respawnTime);
 		Debug.Log("Calling ResetPlayer");
