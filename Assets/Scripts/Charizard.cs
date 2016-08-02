@@ -7,10 +7,13 @@ public class Charizard : BaseEnemy {
 	public GameObject Firepoint;
 	public GameObject explosion;
 	
+	
 
 	// Use this for initialization
 	void Start () {
 		base.Start ();
+		
+
 		// Test for being attacked
 	}
 
