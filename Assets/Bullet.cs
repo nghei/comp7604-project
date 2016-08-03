@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour {
 	public GameObject explosion;
 	BoxerControllerScript playerControl;
 	public int dmg = 500;
-
+	public int lasting_time = 3;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour {
 		{
 			playerControl = playerObject.GetComponent<BoxerControllerScript>();
 		}
-		Destroy (gameObject, 3);
+		Destroy (gameObject, lasting_time);
 
 	}
 

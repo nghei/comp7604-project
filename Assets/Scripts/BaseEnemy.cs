@@ -23,7 +23,7 @@ public class BaseEnemy : MonoBehaviour
 	protected Rigidbody2D body;
 	Animator anim;
 
-	public int speed = 1;
+	public float speed = 1;
 	public int damage = 0;
 	public int hp = 1;
 	public int maxHp = 1;
