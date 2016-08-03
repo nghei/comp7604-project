@@ -6,13 +6,13 @@ public class Charizard : BaseEnemy {
 	public Rigidbody2D Bullet;
 	public GameObject Firepoint;
 	public GameObject explosion;
+	public float bullet_speed = 8;
 	
 	
 
 	// Use this for initialization
 	void Start () {
 		base.Start ();
-		
 
 		// Test for being attacked
 	}
@@ -34,7 +34,7 @@ public class Charizard : BaseEnemy {
 
 	protected override void Attack(){
 
- 		Debug.Log("Megaman attacks!");
+ 		Debug.Log("Charizard attacks!");
 
  		base.Attack();
 
@@ -46,10 +46,10 @@ public class Charizard : BaseEnemy {
 		if (facingLeft){
 			Debug.Log("Bullet prepare to shoot face left!");
 			
-			bullet01.velocity = new Vector2(-8f, 0);
+			bullet01.velocity = new Vector2(-bullet_speed, 0);
 		}else{
 			Debug.Log("Bullet prepare to shoot face right!");
-			bullet01.velocity = new Vector2(8f, 0);
+			bullet01.velocity = new Vector2(bullet_speed, 0);
 		}
 
 
