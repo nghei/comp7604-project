@@ -3,12 +3,11 @@ using System.Collections;
 
 public class streetfighterbullet : MonoBehaviour {
 
-	//public int bulletspeed = 5;
-	//bool facingLeft = true;
+	public float appearTime = 3f;
+
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, 3);
-	
+		Destroy (gameObject, appearTime);
 	}
 	
 	// Update is called once per frame
@@ -18,34 +17,15 @@ public class streetfighterbullet : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D col) 
 	{
 		// If it hits an enemy...
-		if(col.tag == "Enemy")
+		if (col.tag == "Enemy")
 		{
-			// ... find the Enemy script and call the Hurt function.
-			//col.gameObject.GetComponent<Enemy>().Hurt();
-
-			// Call the explosion instantiation.
-			//OnExplode();
-
-			// Destroy the rocket.
-			Destroy (gameObject);
-		}
-		// Otherwise if it hits a bomb crate...
-		else if(col.tag == "BombPickup")
-		{
-			// ... find the Bomb script and call the Explode function.
-			col.gameObject.GetComponent<Bomb>().Explode();
-
-			// Destroy the bomb crate.
-			Destroy (col.transform.root.gameObject);
-
-			// Destroy the rocket.
+			// Destroy the bullet.
 			Destroy (gameObject);
 		}
 		// Otherwise if the player manages to shoot himself...
-		else if(col.gameObject.tag != "Player")
+		else if (col.gameObject.tag != "Player")
 		{
-			// Instantiate the explosion and destroy the rocket.
-			//OnExplode();
+			// Destroy the bullet.
 			Destroy (gameObject);
 		}
 	}
