@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class streetfighterbullet : MonoBehaviour {
+public class StreetFighterBullet : MonoBehaviour {
 
 	public float appearTime = 3f;
 
