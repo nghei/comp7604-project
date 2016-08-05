@@ -14,6 +14,7 @@ TagManager:
   - ExplosionFX
   - HealthBar
   - Monster
+  - EnemyHealthBar
   layers:
   - Default
   - TransparentFX

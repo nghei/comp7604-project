@@ -311,7 +311,7 @@ MonoBehaviour:
   respawnTime: 0
   respawnTimeIncrement: 1
   playerObject: {fileID: 2056612219}
-  healthBarObject: {fileID: 963266941}
+  healthBarObject: {fileID: 420567221}
   respawnLimit: 3
 --- !u!1 &183672776
 GameObject:
@@ -340,7 +340,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 999db0fbe1d84f749942ab46005b00a4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -476,9 +476,17 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 2.1927402
       objectReference: {fileID: 0}
+    - target: {fileID: 11444722, guid: a6bc69d71c046443e8b67f8c358a24aa, type: 2}
+      propertyPath: bulletSpeed
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6bc69d71c046443e8b67f8c358a24aa, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &420567221 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: af80fe7abb2604963b7e7b5a24685a6b, type: 2}
+  m_PrefabInternal: {fileID: 2065564913}
 --- !u!1001 &504946598
 Prefab:
   m_ObjectHideFlags: 0
@@ -643,10 +651,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!1 &963266941 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: af80fe7abb2604963b7e7b5a24685a6b, type: 2}
-  m_PrefabInternal: {fileID: 1990840563}
 --- !u!1 &983741512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,7 +1649,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bdd88e3de6e024ec1bacd58073808d06, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1990840563
+--- !u!1 &2056612219 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 197138, guid: a6bc69d71c046443e8b67f8c358a24aa, type: 2}
+  m_PrefabInternal: {fileID: 404109422}
+--- !u!1001 &2065564913
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1684,10 +1692,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: af80fe7abb2604963b7e7b5a24685a6b, type: 2}
+      propertyPath: m_Name
+      value: ui_healthDisplay
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af80fe7abb2604963b7e7b5a24685a6b, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2056612219 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 197138, guid: a6bc69d71c046443e8b67f8c358a24aa, type: 2}
-  m_PrefabInternal: {fileID: 404109422}

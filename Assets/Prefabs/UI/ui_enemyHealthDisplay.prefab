@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11414694}
   m_Layer: 0
   m_Name: ui_enemyHealthDisplay
-  m_TagString: HealthBar
+  m_TagString: EnemyHealthBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 212: {fileID: 21200002}
   m_Layer: 0
-  m_Name: HealthBar
+  m_Name: EnemyHealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1.2, z: 0}
   enemy: {fileID: 0}
   enemyControl: {fileID: 0}
-  healthBarObj: {fileID: 0}
+  healthBarObj: {fileID: 100000}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -144,7 +144,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: c5f8979fcc4fe40929aa9e14b7f96d46, type: 2}
+  - {fileID: 2100000, guid: 9270c04d436340b48beb1bd681490ed6, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
