@@ -29,6 +29,7 @@ public class BoxerControllerScript : MonoBehaviour {
 	public int maxHp = 100;
 	private float attackTimer = 0;
 	public float attackCd = 0.3f;
+	public float bulletSpeed = 8f;
 
 	private int hp;
 
@@ -112,14 +113,14 @@ public class BoxerControllerScript : MonoBehaviour {
 				//attackTrigger.enabled = true;	
 				Rigidbody2D bulletInstance = Instantiate(sfbullet, transform.position, Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
 				if (facingLeft) {
-					bulletInstance.velocity = new Vector2 (-8f, 0);
+					bulletInstance.velocity = new Vector2 (-bulletSpeed, 0);
 					Vector3 theScale = bulletInstance.transform.localScale;
 					theScale.x *= -1;
 					bulletInstance.transform.localScale = theScale;
 
 
 				} else {
-					bulletInstance.velocity = new Vector2(8f, 0);
+					bulletInstance.velocity = new Vector2(bulletSpeed, 0);
 				}
 
 

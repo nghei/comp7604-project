@@ -10,12 +10,14 @@ public class EnemyHealthBar : MonoBehaviour
 	public GameObject healthBarObj;
 
 	private SpriteRenderer healthBar;
+	private SpriteRenderer healthOutline;
 
 	float originalXScale;
 
 	void Awake ()
 	{
-		healthBar = transform.Find("HealthBar").GetComponent<SpriteRenderer> ();
+		healthBar = transform.Find("EnemyHealthBar").GetComponent<SpriteRenderer> ();
+		healthOutline = transform.Find("HealthOutline").GetComponent<SpriteRenderer> ();
 		originalXScale = healthBar.transform.localScale.x;
 	}
 
@@ -29,6 +31,11 @@ public class EnemyHealthBar : MonoBehaviour
 			healthBar.material.color = Color.Lerp(Color.green, Color.red, 1 - health);
 			healthBar.transform.localScale = new Vector3(originalXScale * health, 1, 1); 
 			transform.position = enemy.position + offset;
+			if (health <= 0)
+			{
+				// Set health bar size to 0
+				healthBarObj.transform.localScale = new Vector3(0, 0, 0);
+			}
 		}
 		catch (MissingReferenceException e) {
 			Destroy (healthBarObj);
